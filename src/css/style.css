@@ -1,0 +1,3819 @@
+@font-face {
+	font-family: AinslieSans-ExtLig;
+	src: url(../fonts/AinslieSans-ExtLig.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: Rubik-Regular;
+	src: url(../fonts/Rubik-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: Rubik-Light;
+	src: url(../fonts/Rubik-Light.ttf);
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: Rubik-Bold;
+	src: url(../fonts/Rubik-Bold.ttf);
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: Rubik-Medium;
+	src: url(../fonts/Rubik-Medium.ttf);
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+.container{
+	padding-left: 0;
+	padding-right: 0;
+}
+.row {
+	margin-right: 0;
+	margin-left: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+a{
+	text-decoration: none;
+	border-color:transparent;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+a:active, a:focus { outline: none; }
+input {
+    outline: 0 !important;
+}
+
+body {
+	font-family: Rubik-Regular, Helvetica sans-serif;
+}
+
+/*------------ Header-----------------------------------------------------------------------------*/
+header button{
+	border: none;
+	background-color: transparent;
+}
+
+/*кнопки регистраций*/
+.header-reg {
+	background-color: #3e4358;
+	color:#aaaab0;
+}
+.header-registration a{
+	text-decoration: none;
+	color: #aaaab0;
+}
+.header-registration .btn {
+	padding: 6px 0;}
+.header-registration img {
+	margin-right: 5px;}
+
+.header-registration hr {
+	margin: 3px 10px 0 10px;
+	border: 0;
+	width: 2px;
+	height: 15px;
+	background-color: #222531;
+}
+.header-registration .btn:active,
+.header-registration .btn:focus,
+.header-registration .btn:hover {
+	outline: none;
+	color:#ffffff;
+	}
+
+/*логотип проекта*/
+.header-logo {
+	width: 100%;
+	background-color: #ffffff;
+}
+.header-logo a{
+	color:#3b3c3f;
+	text-decoration: none;
+}
+.header-logo a:active,
+.header-logo a:focus,
+.header-logo a:hover{
+	color: #aaaab0;
+	text-decoration: none;
+	outline: none;
+}
+.header-logo .container{
+	padding-top: 0.7%;
+	padding-bottom: 1%;
+}
+.header-logo-name a:hover {
+	color:#3b3c3f;
+	text-decoration: none;
+}
+.header-logo-name h1 {
+	letter-spacing: 2px;
+    margin-bottom: 0;
+
+}
+.header-logo-name .logo-grad{
+	font-family: Rubik-Bold, Helvetica sans-serif;
+	color:#63c7a0;
+}
+/*градиент для слова realty*/
+/*.logo-grad {*/
+	/*position: relative;*/
+/*}*/
+/*.logo-grad:after {*/
+	/*content: "";*/
+	/*position: absolute; top: 0; right: 0;*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+	/*background: linear-gradient(rgba(99,199,160,1), rgba(255,255,255,.0));*/
+	/*!*background: linear-gradient(#fefcea, #f1da36);*!*/
+/*}*/
+.header-logo-name p {
+	font-size: 15px;
+	letter-spacing: 2px;
+	color: #aaaab0;
+}
+.header-logo h5 {
+    margin-top: 0;
+    line-height: 18px;
+}
+.header-problem-realty,
+.header-exclusive-realty,
+.header-add-realty  {
+	margin-top: 2%;
+	padding-top: 1%;
+
+}
+.header-exclusive-realty img,
+.header-problem-realty img {
+    float:left;
+    margin-right: 4%;
+}
+.header-exclusive-realty:hover,
+.header-problem-realty:hover{
+    background: linear-gradient(to right, #63c7a0, #5fbec9);
+	-moz-box-shadow:  0 0 13px #784778;
+	-webkit-box-shadow:  0 0 13px #784778;
+	box-shadow: 0 0 13px #784778;
+}
+.header-exclusive-realty:hover a,
+.header-problem-realty:hover a{
+	color:#ffffff;
+}
+
+
+.header-add-realty {
+	margin-top: 1%;
+}
+.header-add-realty a {
+	text-decoration: none;
+   color:#784778;
+}
+.header-add-realty p {
+    margin-top: 4%;
+	overflow:hidden;
+}
+.header-add-realty img{
+    float:left;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 3%;
+    border: 2px solid #fce3d4;
+    border-radius: 50%;
+    -moz-box-shadow: 0 0 19px  #fce3d4;
+    -webkit-box-shadow: 0 0 19px  #fce3d4;
+    box-shadow: 0 0 19px #fce3d4;
+}
+
+/*стили для модального окна регистраций*/
+.registration .close {
+	font-size: 31px;
+	color: #494e5f;
+	text-shadow: none;
+	opacity: 1;
+	margin: -4% -7%;
+}
+.registration .modal-content{
+	width: 80%;
+	height:auto;
+	background-color: #303549;
+	color:#ffffff;
+	padding: 4% 7% 8% 7%;
+}
+.registration hr{
+	border-top: 3px solid #272b3b;
+}
+.registration .form-group label {
+	font-size: 12px;
+}
+.registration form input{
+	height: 50px;
+	border: 3px solid #556975;
+}
+.registration .form-control:focus {
+	border-color: #d8e7e5;
+}
+.registration .checkbox-custom {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #d8e7e5;
+	border-radius: 3px;
+	box-shadow: none;
+}
+
+.registration .label{
+	color:#7f828e;
+	font-size: 14px;
+}
+.registration .label i{
+	color:#416566;
+}
+.registration .reg-btn{
+	font-family: Rubik-Light, Helvetica sans-serif;
+	font-size: 17px;
+	color:#ffffff;
+	background-color:#f08544;
+	padding: 8px 30px;
+	margin: 2% 0;
+}
+.registration .reg-btn:active,
+.registration .reg-btn:focus,
+.registration .reg-btn:hover{
+	color:#f08544;
+	background-color:transparent;
+	border: 1px solid #f08544;
+	outline: 0;
+	outline-offset: 0;
+}
+#myModal-login p{
+	font-size: 14px;
+	color:#63c7a0;
+}
+#myModal-login  p a{
+	text-decoration: none;
+	color:#898ea1;
+
+}
+#myModal-login  p a:hover{
+	text-decoration: none;
+	color:#fff;
+
+}
+
+/*меню проекта*/
+.header-menu {
+	background-color: #ebeaea;
+}
+.header-menu-main{
+	margin: 1% 0 1% 0;
+}
+.header-menu-main a {
+    height: 40px;
+    padding-right: 2%;
+    padding-left: 2%;
+	text-decoration: none;
+	color:#7e808b;
+}
+.header-menu-main a:hover {
+	text-decoration: none;
+	color:#b6b7c0;
+}
+.header-menu-main div:last-child{
+	padding-left: 0;
+}
+
+.menu-my-cabinet{
+	border-left: 2px solid #7e808b;
+	padding-left: 2%;
+}
+
+/*-------------------main------------------------------------------------------------------*/
+.main-bg{
+	background-image: url("../img/video-img.png");
+	background-repeat: no-repeat;
+
+}
+.main-video{
+	margin-top: 3%;
+	text-align: center;
+	color:#ffffff;
+}
+.main-video h1{
+	font-family: Rubik-Medium, Helvetica sans-serif;
+	font-size: 45px;
+}
+.main-video p{
+	font-family: Rubik-Regular, Helvetica sans-serif;
+	font-size: 25px;
+}
+.main-video img{
+	margin-top: 2.5%;
+}
+.main-video button{
+	margin: 4% 0 6.5% 0;
+	background-color: #f08544;
+	border: none;
+	padding: 11px 49px 12px 49px;
+
+}
+.main-video button a{
+	font-family: Rubik-Light, Helvetica sans-serif;
+	text-decoration: none;
+	font-size: 17px;
+	color:#ffffff;
+}
+
+
+/*-------форма для выбора квартиры--------*/
+.form-search .form-control{
+	-o-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.form-search .form-group{
+	font-family: Rubik-Regular, Helvetica sans-serif;
+	margin: 0 0 5% 0;
+	padding: 2.6% 2.3% 3% 1%;
+	font-size: 12px;
+	color:#ffffff;
+	background: linear-gradient(to right, #63c7a0, #5fbec9);
+}
+
+.form-search form .form-shadow {
+	height: 10px;
+	margin: 3% 0 0 0;
+	background: linear-gradient(to right, #9edcc3, #9bd6dc);
+	/*-moz-box-shadow:inset 0 2px 25px #f6f6f7;*/
+	/*-webkit-box-shadow:inset 0 2px 25px #f6f6f7;*/
+	/*box-shadow:inset 0 2px 25px #f6f6f7;*/
+}
+.form-search .form-group-realty,
+.form-search .form-shadow-line{
+	margin:0 !important;
+}
+.form-group label{
+	font-family: Rubik-Medium, Helvetica sans-serif;
+	margin-left: 5%;
+	font-size: 10px;
+}
+.form-group section{
+	padding-left: 0;
+}
+.select-div{
+	padding-left: 0;
+}
+.form-amount{
+	padding-left:0;
+	padding-right: 15px;
+}
+.form-group #amount {
+	background-color: #efeff4;
+	border: none;
+	border-radius:0;
+	/*width:134px;*/
+	margin: 0;
+	padding: 21px 21px 21px 10px;
+}
+.form-search .form-control {
+	display: block;
+	height: 44px;
+	padding-right: 0;
+}
+.select2-selection  {
+	border-radius: 0 !important;
+	height: 44px !important;
+	padding-top: 8px;
+	padding-bottom:12px;
+	border:none !important;
+}
+.select2-container--default .select2-selection--single{
+	background-color: #ffffff;
+	-moz-box-shadow:inset 2px 2px 5px #dbb5b5;
+	-webkit-box-shadow:inset 2px 2px 5px #dbb5b5;
+	box-shadow:inset 2px 2px 5px #dbb5b5;
+}
+/*.form-group #amount:hover,*/
+/*.select2-container--default .select2-selection--single:hover{*/
+	/*text-decoration: none;*/
+	/*border: 1px solid #e7822d !important;*/
+	/*background-color: #ffffff;*/
+	/*-moz-box-shadow: 0 0 11px #c2c2cf;*/
+	/*-webkit-box-shadow: 0 0 11px #c2c2cf;*/
+	/*box-shadow: 0 0 11px #c2c2cf;*/
+/*}*/
+/*.form-group #amount:visited,*/
+/*.select2-container--default .select2-selection--single:visited,*/
+/*.form-group #amount:active,*/
+/*.select2-container--default .select2-selection--single:active,*/
+/*.form-group #amount:focus,*/
+/*.select2-container--default .select2-selection--single:focus{*/
+	/*border: 1px solid #e7822d !important;*/
+	/*background-color: #ffffff;*/
+	/*-moz-box-shadow: 0 0 11px #c2c2cf;*/
+	/*-webkit-box-shadow: 0 0 11px #c2c2cf;*/
+	/*box-shadow: 0 0 11px #c2c2cf;*/
+	/*text-decoration: none;*/
+/*}*/
+.select2-search__field{
+	border: 1px solid #e7822d !important;
+}
+.select2-selection__arrow {
+	height: 8px !important;
+	width: 12px !important;
+	margin: 10%;
+	position: absolute;
+}
+.form-search #pay-method {
+	width: 100%;
+}
+.select-coast{
+	padding-left: 0;
+}
+.select-coast input{
+	border: none;
+	background-color: #ffffff;
+	-moz-box-shadow:inset 2px 2px 5px #dbb5b5;
+	-webkit-box-shadow:inset 2px 2px 5px #dbb5b5;
+	box-shadow:inset 2px 2px 5px #dbb5b5;
+}
+.form-search .select-div-last {
+	padding-right: 5%;
+}
+#price-from , #price-up{
+	height: 44px;
+	color:#000;
+	padding: 3px 5px 3px 5px;
+}
+.form-search .checkbox-custom {
+	width: 15px;
+	height: 15px;
+	margin-top: 37%;
+	margin-left: -58%;
+	border:1px solid #ffffff;
+	box-shadow: none;
+}
+.form-search .label {
+	font-family: Rubik-Light, Helvetica sans-serif;
+	color:#ffffff;
+	font-size: 13px;
+	margin: -50% 0 0 -24%;
+}
+.show-more {
+	margin-left: -3%;
+}
+.btn-search{
+	font-family: Rubik-Light, Helvetica sans-serif;
+	background: #f08544;
+	margin: 28% 0 0 5%;
+	height: 44px;
+	padding: 6px 27px 6px 27px;
+	font-size: 18px;
+	color:#ffffff;
+	border: none;
+	box-shadow: 0 0 15px  #4d3d4d;
+}
+
+/*контент страницы*/
+.main-content{
+	background-color: #f9f7f6;
+}
+.ads-1 {
+	margin: 3% 0 2% 0;
+}
+.ads-1:hover {
+	box-shadow: 0 0 20px  #baa6ba;
+}
+.latest-ads .clock {
+	margin: -6% 0 0 -6%;
+}
+.photos-room {
+	padding-right: 0;
+	padding-left: 0;
+}
+.photos-room img{
+	margin-top: 0.3%;
+	/*width: 300px;*/
+	height: 225px;
+}
+.table-param {
+	padding-right: 0;
+	padding-left: 0;
+}
+.table-param .table{
+	box-shadow: 0 0 7px #baa6ba;
+	margin-bottom: 0;
+}
+.table-responsive {
+	 overflow-x: visible;
+}
+.table-param thead{
+	background-color: #ffffff;
+	/*box-shadow: 2px 0 15px  #4d3d4d;*/
+}
+.table-param thead tr th {
+	text-align: center;
+	width: 20%;
+	color: #7f8187;
+}
+.table-param tbody tr td{
+	color:#2b2e3d;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2% 0 1.2% 0;
+	width: 20%;
+	background-color: #edf8f4;
+}
+.table-param tbody ul {
+	list-style: none;
+}
+.table-param .wight-light {
+	background-color: #ffffff;
+}
+
+/*Карусель с квартирами*/
+.carousel-caption {
+	background-color: #585b69;
+	opacity: 0.9;
+	right: 0;
+	left: 0;
+	padding: 0 5% 0 5%;
+	margin-bottom: -9%;
+}
+.carousel-caption h5{
+	font-family: Rubik-Light, Helvetica sans-serif;
+	text-align: left;
+	font-size: 13px;
+	margin: 5px 0 10px 0;
+}
+.carousel-caption p{
+	font-family: Rubik-Medium, Helvetica sans-serif;
+	text-align: left;
+	margin: 0 0 -12% 0;
+	font-size: 18px;
+}
+.carousel-caption button{
+	float: right;
+	margin: 0 2% 5% 0;
+	background-color: #f08544;
+	padding: 4px 15px 4px 15px;
+	border: none;
+	border-radius: 3px;
+	opacity: 1;
+	z-index: 1;
+}
+.carousel-caption button a{
+	 text-decoration: none;
+	 color:#ffffff;
+ }
+.carousel-caption button a:hover{
+	text-decoration: none;
+	color:#7f8187;
+}
+.carousel-control.right,
+.carousel-control.left{
+	box-shadow: none !important;
+	background-image: none;
+}
+.carousel-control .glyphicon-menu-left,
+.carousel-control .glyphicon-menu-right {
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	font-size: 24px;
+	color: #ffffff;
+	opacity: 1;
+	z-index: 5;
+	display: inline-block;
+}
+.carousel-control .glyphicon-menu-left:hover,
+.carousel-control .glyphicon-menu-right:hover {
+	color:#353a4e !important;
+	opacity: 1;
+}
+.carousel-time .carousel-hot {
+	background-color: #bb4b65;
+}
+.carousel-time {
+	position: absolute;
+	z-index: 1;
+}
+.carousel-time p {
+	position: relative;
+	font-family: Rubik-Light, Helvetica sans-serif;
+	font-size: 12px;
+	margin: 2% 2% 0 2%;
+	background-color: #78caa8;
+	opacity:0.9;
+	border-radius: 5px;
+	color: #ffffff;
+	width: 110%;
+	z-index: 1;
+}
+.carousel-time p:last-child {
+	background-color: #8a8b95;
+}
+.carousel-time p:hover{
+	color:#859d9b;
+}
+.carousel-time img{
+	height: 16px;
+	margin: 2% 3% 2% 3%;
+}
+/*.carousel-inner img .carousel-img{*/
+	/*width: 100%;*/
+	/*height: 225px;*/
+/*}*/
+/*показать больше*/
+.show-more-offers {
+    text-align: center;
+	background-color: #ffffff;
+	box-shadow: 0 0 7px #baa6ba;
+	padding: 1.3% 2% 1.3% 2%;
+	margin: 3% 0 5% 0;
+}
+.show-more-offers img {
+	margin-right: 6%;
+}
+.show-more-offers p {
+	margin-top: 3%;
+	font-size: 17px;
+	color: #5fbec9;
+	border-bottom: 2px dotted #5fbec9;
+	width: 68%;
+}
+.show-more-offers a:focus,
+.show-more-offers a:hover{
+	text-decoration: none;
+	color:#859d9b;
+}
+.show-more-offers p:focus,
+.show-more-offers p:hover{
+    color:#859d9b;
+}
+.content-text {
+	margin: 1% 0 6% 0;
+}
+.content-text h4 {
+	color:#353a4e;
+	font-size: 20px;
+	margin-bottom: 3%;
+	letter-spacing: 5px;
+}
+.content-text p {
+	color:#7a7c85;
+	font-size: 15px;
+}
+/*наши приемущества*/
+.content-advantages {
+	background-image: url("../img/footer-bg.png");
+	background-repeat: repeat-y;
+	color:#ffffff;
+}
+.content-advantages div:first-child{
+	padding-left: 3%;
+}
+.content-advantages div:nth-child(2){
+	padding-left:0;
+}
+.content-advantages div:last-child{
+	padding-left:5%;
+}
+.content-advantages img{
+	padding-top: 5%;
+}
+
+.content-advantages h5{
+	font-family: Rubik-Medium, Helvetica sans-serif;
+	margin: -12% 0 2% 10%;
+	font-size: 18px;
+}
+.content-advantages p{
+	margin: 0 0 2% 10%;
+}
+.content-advantages button {
+	margin: 5% 0 12% 10%;
+	background-color: #f08544;
+	padding: 7px 22px 6px 22px;
+	border: none;
+	border-radius: 3px;
+}
+.content-advantages button a{
+	text-decoration: none;
+	color:#ffffff;
+	font-size: 15px;
+}
+.content-advantages button a:hover{
+	color:#7a7c85;
+}
+
+
+
+/*------------------------------footer-------------------------------------------------------------------------------*/
+/*футер блок рассылка*/
+.footer-newsletter {
+	background-color: #3e4358;
+	padding: 2% 0 1% 0;
+}
+.footer-subscribe{
+	font-size: 20px;
+	color:#ffffff;
+}
+.footer-email-field input {
+	background-color: #303549;
+	color:#96989f;
+	width:60%;
+	height: 44px;
+	border: none;
+	border-radius: 5px;
+	padding: 3px 10px 3px 10px;
+    -moz-box-shadow:inset 1px 1px 13px #2a2f41;
+    -webkit-box-shadow:inset 1px 1px 13px #2a2f41;
+    box-shadow:inset 1px 1px 20px #2a2f41;
+}
+.footer-email-field button {
+	margin-left: 5%;
+	color:#ffffff;
+	height: 41px;
+	border: none;
+	border-radius: 3px;
+	padding: 0 30px 0 30px;
+	background: linear-gradient(to right, #63c7a0, #5fbec9);
+}
+.footer-email-field p{
+	font-size: 12px;
+	color:#96989f;
+}
+.footer-subscribe img{
+    float:left;
+	margin: 2% 2%;
+}
+
+/*футер блок меню*/
+.footer-menu-field {
+	font-family: Rubik-Light, Helvetica sans-serif;
+	background-color: #f0eeee;
+	font-size: 14px;
+	padding: 2% 0 2% 0;
+}
+.footer-menu-field ul li{
+	list-style: none;
+	margin-bottom: 4%;
+}
+.footer-menu-field ul li a:hover{
+    color: #aaaab0;
+}
+.footer-menu-field ul li a{
+	text-decoration: none;
+	color:#74757d;
+}
+.footer-menu-logo{
+	margin-top: 1%;
+	text-align: center;
+}
+.footer-logo-name a {
+	font-family: Rubik-Light, Helvetica sans-serif;
+	text-decoration: none;
+	color:#192e4b;
+	font-size: 27px;
+}
+.footer-logo-name a strong{
+	font-family: Rubik-Bold, Helvetica sans-serif;
+	text-decoration: none;
+	color:#63c7a0;
+}
+.footer-logo-name p {
+	color:#a4a3a6;
+}
+.footer-tel h5 {
+	color: #424552;
+	font-size: 15px;
+	margin-top: 8%;
+}
+.footer-tel p{
+	font-family: Rubik-Medium, Helvetica sans-serif;
+	color: #424552;
+	font-size: 20px;
+}
+.footer-tel button {
+	font-size: 15px;
+	padding: 3px 28px 3px 28px;
+	border: 2px solid #a4a3a6;
+	background-color: transparent;
+}
+.footer-tel button a {
+    text-decoration: none;
+	color:#a4a3a6;
+	font-size: 15px;
+}
+
+/*футер блок название сайта*/
+.footer-name {
+	background-color: #e0e1e7;
+	font-size: 13px;
+}
+.footer-name p{
+    margin: 1.2% 0 0.7% 3.5%;
+}
+.footer-name a{
+	text-decoration: none;
+	color:#b4b6bf;
+
+}
+
+
+/*------------------------------page Problem-realty-------------------------------------------*/
+
+.problem-realty .table-param tbody tr td {
+	padding: 2% 0 0 0;
+}
+.problem-realty-header{
+	background-color: #f9f7f6;
+	padding: 1% 0 2% 0;
+}
+.problem-realty-header img{
+	margin: 0 0 -6% -4%;
+}
+
+.problem-realty-header h2{
+	font-size: 35px;
+	color:#353a4e;
+}
+/*.problem-realty .form-search .form-group ,*/
+/*.problem-realty .form-search form .form-shadow {*/
+	/*margin: 0;*/
+/*}*/
+.problem-realty-filters{
+	margin: 1% 0 0 0;
+}
+.problem-realty-filters ul li{
+	list-style: none;
+	padding: 0 1% 0 1%;
+	color:#717176;
+	font-size: 12px;
+}
+.problem-realty-filters ul li:first-child{
+	list-style: none;
+	margin-right: 5%;
+}
+.problem-realty-filters ul li p{
+	white-space:nowrap;
+	margin-bottom: 0;
+}
+.problem-realty-filters ul li p img{
+	margin-right: 4% ;
+}
+.realty-location{
+	padding: 3px;
+	background-color: #fae2c9;
+	margin-right: 1%;
+}
+.realty-location:hover{
+	background-color: #fbcf9e;
+}
+/*.problem-realty .carousel-time p:first-child {*/
+	/*transform: scale(0);*/
+/*}*/
+/*------------------------------page Search-result-------------------------------------------*/
+.search-result .form-search .form-group ,
+.search-result .form-search form .form-shadow {
+margin: 0;
+}
+.search-result .form-search .label {
+	margin: 23% 0 0 0;
+}
+.search-result .form-search .form-group {
+	padding: 2.6% 2.3% 0 1%;
+}
+.search-result .form-search .checkbox-custom {
+	margin-top: 22%;
+	margin-left: -44%;
+}
+.search-result-block{
+	margin: 8% 0 4% 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+.search-result-block div{
+	padding-left: 0;
+	/*padding-right: 0;*/
+}
+.search-result-block .btn-search {
+	font-family: Rubik-Light, Helvetica sans-serif;
+	background: #f08544;
+	margin: 0;
+}
+.search-result-block .filter img{
+	margin: 0 4% 0 0;
+	/*box-shadow: 0 0 5px #000;*/
+}
+.search-result-block .filter{
+	font-size: 14px;
+}
+.search-result-block .search-line {
+	height: 40px;
+	border:none;
+	border-radius: 3px;
+	padding: 5px;
+	margin-right: 2%;
+	-moz-box-shadow: inset 2px 2px 5px #dbb5b5;
+	-webkit-box-shadow: inset 2px 2px 5px #dbb5b5;
+	box-shadow: inset 2px 2px 5px #dbb5b5;
+}
+.search-result-block .show-item{
+	height: 40px;
+	box-shadow: none;
+	padding: 6px 38px 6px 38px;
+}
+.search-result-block .advanced-search {
+	background-color: #ffffff;
+	margin: 0 0 0 -21%;
+	width: 90%;
+	color: #60c0c0;
+	font-size: 15px;
+	height: 40px;
+	border-radius: 3px;
+}
+.search-result-block .advanced-search img{
+	margin: 0 5% 0 0;
+}
+.search-results-realty h2 {
+	font-size: 35px;
+	color:#353a4e;
+	margin: -4% 0 2%;
+	letter-spacing: 5px;
+}
+.search-results-realty .search-results-house{
+	margin: 2% 0 0 -3%;
+}
+.found-property{
+	font-family: Rubik-Light, Helvetica sans-serif;
+    margin: 2% 0 2% 0;
+	background-color: #e6e5e6;
+	font-size: 18px;
+	padding: 10px;
+}
+.found-property i{
+	font-family: Rubik-Medium, Helvetica sans-serif;
+}
+.found-property-label{
+	font-family: Rubik-Regular, Helvetica sans-serif;
+	font-size: 12px;
+	margin-left: 3%;
+	margin-top: 1%;
+}
+.found-property-input{
+	width: 25%;
+}
+.found-property-input .select2-selection {
+	font-family: Rubik-Light, Helvetica sans-serif;
+	border-radius: 3px !important;
+	height:30px !important;
+	padding-top: 2px;
+	font-size: 14px;
+}
+.found-property-input .select2-selection__arrow {
+	margin: 5%;
+
+}
+
+
+/*------------------------------page contact-------------------------------------------*/
+
+.contact-bg{
+    background-image: url("../img/contact-bg.png");
+    background-repeat: no-repeat no-repeat;
+	height: 362px;
+}
+.contact {
+	margin: 4% 0 2% 0;
+}
+.contact img{
+	margin-left: -4%;
+}
+.contact h3{
+	margin: -3% 0 0 0;
+}
+.social-networks{
+	margin: 6% 0 2% 1%;
+}
+.social-networks img{
+	float: left;
+}
+.social-networks .contact-tel{
+	padding: 3%;
+	background: linear-gradient(to right, #63c7a0, #5fbec9);
+}
+.social-networks ul li {
+	list-style: none;
+	margin: 0 0 0 12%;
+    line-height: 25px;
+}
+.contact-form {
+    margin: 3% 0 10% 0;
+    padding: 2% 2% 3% 2%;
+    background-color: #f2f5f3;
+}
+.contact-form h3{
+    margin:0 0 3% 1%;
+    letter-spacing: 5px;
+    font-size: 25px;
+    color:#353a4e;
+}
+.contact-form textarea,
+.contact-form input {
+    height: 50px;
+    color: #353a4e;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px;
+    border: 3px solid #d8e7e5;
+    border-radius: 5px;
+    -moz-box-shadow: inset 1px 1px 13px #ebddeb;
+    -webkit-box-shadow: inset 1px 1px 13px #ebddeb;
+    box-shadow: inset 1px 1px 5px #ebddeb;
+}
+.contact-form .contact-text{
+    margin:1% 0 0  1.5%;
+}
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+.contact-captcha label{
+    margin:2% 0 2% 4%;
+    font-size: 10px;
+}
+.contact-captcha .captcha{
+    margin: 0 0 3% 2%;
+    width: 285px;
+    height: 210px;
+    background: linear-gradient(to right, #63c7a0, #5fbec9);
+}
+
+.contact-form button {
+    font-family: Rubik-Light, Helvetica sans-serif;
+    color:#ffffff;
+    font-size: 17px;
+    margin: 0 0 1% 2%;
+    background-color: #f08544;
+    padding: 7px 22px 6px 22px;
+    border: none;
+    border-radius: 3px;
+}
+
+/*------------------------------page cabinet-------------------------------------------*/
+/*большое меню кабинет*/
+.cab-icon-menu ul{
+    margin-bottom: 0;
+}
+.cab-icon-menu ul li{
+    list-style: none;
+    padding: 0;
+    background-color: #3e4358;
+    border-bottom: 2px solid  #2b2f3f ;
+}
+.cab-icon-menu ul li .btn{
+	padding: 7px 15px 7px 15px;
+	width: 100%;
+	text-align:left;
+}
+.cab-icon-menu ul li .btn:hover{
+    background-color: #2b2f3f;
+	color:#ffffff;
+}
+.cab-icon-menu ul li .btn:active,
+.cab-icon-menu ul li .btn:focus{
+    background: linear-gradient(to right, #63c7a0, #5fbec9);
+	color:#ffffff;
+}
+
+.cabinet-main-logo{
+	background-color: #2b2f3f;
+	padding: 16% 30% 10% 30%;
+}
+.cabinet-main-logo img{
+	margin: 1%;
+	box-shadow: 0 0 0 8px  #2b2f3f, 0 0 0 16px  #3e4358;
+	border-radius: 50%;
+}
+.cabinet-main-logo p{
+	text-align: center;
+	padding-top: 30%;
+    color:#5fbfc5;
+}
+.cab-icon-menu img {
+	margin: 2px 10px 0 0;
+	float: left;
+}
+.cab-icon-menu li a p {
+	overflow: hidden;
+	margin-right: 0;
+	/*margin-bottom: 0;*/
+}
+.cab-icon-menu a {
+	font-family: Rubik-Light, Helvetica sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 15px;
+}
+.cabinet-my-all-clients {
+	padding-right: 0;
+	padding-left: 0;
+}
+.cabinet-my-all-clients{
+	margin-top: 2%;
+}
+.cabinet-my-all-clients img{
+	margin-right: 3%;
+}
+.cabinet-tab-client {
+    box-shadow: 1px 1px 20px #a4a3a6;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+    width: 48%;
+}
+
+.cabinet-tab-client thead tr th{
+	font-size: 20px;
+	background-color: #787c8d;
+	color:#ffffff;
+	padding: 4% 0 1% 5%;
+    border:none;
+}
+.cabinet-tab-client thead tr th p{
+    text-align: left;
+    margin: 0 0 2% 0;
+	letter-spacing: 4px;
+}
+.cabinet-tab-client tbody tr td{
+	width: 33.3%;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+.cabinet-tab-purse p {
+    margin-bottom: 0;
+	font-size: 20px;
+}
+.cabinet-tab-client tbody .tab-bg {
+    background-color: #f3f4f8;
+}
+.tab-bg-col1{
+    background-color: #fce7da;
+}
+.tab-bg-col2{
+    background-color: #fdf0e8;
+}
+.tab-bg-col3{
+    background-color: #cfd1d9;
+}
+.cabinet-tab-client .btn-all-client{
+    text-decoration: none;
+    color: #63c7a0;
+    font-size: 15px;
+    padding: 3px 28px 3px 28px;
+    border: 1px solid #a4a3a6;
+    background-color: transparent;
+    border-radius: 3px;
+    margin: 3% 0 3% 0;
+    text-align: center;
+}
+.cabinet-tab-client p .btn-add-client{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 13px 32px 13px 32px;
+    background: linear-gradient(to right, #63c7a0, #5fbec9);
+    border-radius: 3px;
+    margin: 6% 0 6% 0;
+    box-shadow: 1px 1px 20px #a4a3a6;
+}
+.cabinet-tab-client p{
+    text-align: center;
+    margin: 7%;
+}
+
+/*мой кошелек*/
+.cabinet-fill-purse {
+    background-color: #ffffff;
+    width: 48%;
+    padding-right: 0;
+    margin-left: 1.3%;
+    padding-left: 0;
+    box-shadow: 1px 1px 20px #a4a3a6;
+}
+.cabinet-fill-purse .cabinet-tab-purse{
+    background-color: #787c8d;
+    color:#ffffff;
+    padding: 4% 1% 3% 6%;
+}
+.cabinet-tab-purse img{
+    float: left;
+}
+.cabinet-tab-purse p{
+    overflow:hidden;
+	letter-spacing: 4px;
+}
+.cabinet-your-balance {
+    margin: 8% 0 7% 14%;
+    width: 67%;
+    background-color: #f5f5f6;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.cabinet-your-balance span{
+    margin-top: 10%;
+    font-size: 15px;
+    color: #787c8d;
+    padding: 10%;
+}
+.cabinet-your-balance p{
+    font-size: 30px;
+    color: #3e4358;
+}
+.cabinet-btn-replenish{
+    text-align: center;
+}
+
+.cabinet-btn-replenish p{
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+.cabinet-btn-replenish .payment-history{
+    text-decoration: underline;
+    color: #787c8d;
+}
+.cabinet-btn-replenish .setting-business{
+    color: #787c8d;
+}
+.cabinet-btn-replenish p:last-child{
+	margin: 11% 3% 7% 3%;
+ }
+.cabinet-btn-replenish .btn-replenish{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 13px 32px 13px 32px;
+    background: linear-gradient(to right, #63c7a0, #5fbec9);
+    border-radius: 3px;
+    margin: 10% 0 10% 0;
+    box-shadow: 1px 1px 20px #a4a3a6;
+}
+
+/*блок моя недвижимость*/
+.cabinet-my-realty {
+	padding-right: 0;
+}
+.cab-realty-caption{
+	height: 60px;
+	margin: 5% 0 2% 0;
+	background-color: #787c8d;
+	padding: 2% 2% 1% 3%;
+}
+.cab-realty-caption img{
+	float: left;
+}
+.cab-realty-caption h4{
+	overflow: hidden;
+	color:#ffffff;
+	font-size: 20px;
+	letter-spacing: 4px;
+	margin-top: 5px;
+}
+.cabinet-block-house{
+	background-color: #ffffff;
+	margin: 4% 0 4% 0;
+	padding-right: 0;
+	padding-left: 0;
+	box-shadow: 1px 1px 11px #a4a3a6;
+}
+.photo-realty {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.realty-lease {
+	margin-left: 2%;
+}
+.realty-lease h5{
+	font-size: 15px;
+	color:#2b2e3d;
+	line-height: 25px;
+}
+.realty-lease a{
+	text-decoration: none;
+	color:#97989e;
+	font-size: 12px;
+	background-color: #ebecee;
+	border-radius: 3px;
+	padding: 5px 14px 5px 14px;
+}
+.realty-lease a:hover{
+    color:#2b2e3d;
+}
+.realty-coast h4{
+	font-family: Rubik-Medium, Helvetica sans-serif;
+	margin: 8% 0 4% 0;
+	font-size: 18px;
+	color:#3e4358;
+}
+.realty-coast img{
+	float:left;
+}
+.realty-coast p{
+	color:#5f626f;
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+.realty-coast span{
+	color:#9698a5;
+	font-size: 12px;
+	margin:0 0 0 8%;
+}
+
+.realty-edit{
+	margin: 4% 0 0 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+.realty-edit .realty-raise-ad{
+	background-color: #f08544;
+	font-size:15px;
+	color:#ffffff;
+	border-radius: 3px;
+	padding: 5px 14px 5px 14px;
+}
+.realty-edit ul{
+	list-style: none;
+	margin-left: 15%;
+}
+.realty-edit ul li{
+	padding-bottom:8%;
+	text-decoration: underline;
+}
+
+.realty-edit ul li a{
+	color:#5fbec8;
+}
+.realty-edit ul li a:hover{
+	color:#9698a5;
+}
+.realty-edit ul li:first-child{
+	margin-top: 12%;
+}
+.photo-realty-data hr {
+	margin: 0 0 1% 5%;
+	width: 92%;
+}
+.cab-views {
+	margin: 2% 0 0 2%;
+	font-size: 12px;
+}
+.cab-views a{
+	text-decoration: none;
+	color:#9698a5;
+}
+.cab-views a:hover{
+	color:#2b2f3f;
+}
+.cab-views img{
+	float:left;
+}
+.cab-all-objects{
+	height: 75px;
+	padding-top: 3%;
+	margin-bottom: 5%;
+	text-align: center;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 11px #a4a3a6;
+}
+.cab-all-objects a{
+	text-decoration: none;
+	font-size: 17px;
+	color:#5fbec9;
+}
+.cab-all-objects a:hover{
+	color:#9698a5;
+}
+
+	/*------------------------------page cabinet-my-client-------------------------------------------*/
+.cabinet-content{
+	background-color: #f9f7f6;
+}
+.cabinet-menu{
+	background-color: #2b2f3f;
+	width: 60px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+.cabinet-user-logo {
+	margin: 10px 10px 185px 10px ;
+	width: 40px;
+	height: 40px;
+	border: 3px solid #3e4358;
+	border-radius: 50%;
+}
+.cab-small-menu{
+    list-style: none;
+    background-color: #3e4358;
+    border-bottom: 2px solid #2b2f3f;
+}
+
+.cabinet-user-logo {
+    margin: 10px 10px 185px 10px ;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #3e4358;
+    border-radius: 50%;
+}
+.cab-small-menu ul{
+    margin-bottom: 0;
+}
+.cab-small-menu ul li{
+    list-style: none;
+    padding:0;
+    background-color: #3e4358;
+    border-bottom: 2px solid  #2b2f3f ;
+}
+
+.cab-small-menu ul li .btn{
+	padding: 7px 15px 7px 15px;
+	width: 100%;
+	text-align:left;
+}
+.cab-small-menu ul li .btn:hover{
+	background-color: #2b2f3f;
+	color:#ffffff;
+}
+.cab-small-menu ul li .btn:active,
+.cab-small-menu ul li .btn:focus{
+	background: linear-gradient(to right, #63c7a0, #5fbec9);
+	color:#ffffff;
+}
+
+.cab-small-menu ul li .btn:last-child{
+    padding-bottom:7px;
+    border-bottom:0;
+}
+
+/*блок мой клиент*/
+.cabinet-my-client {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 15px;
+	padding-right: 0;
+}
+.my-client {
+	margin-top: 2%;
+	background-color: #787c8d;
+	color:#ffffff;
+}
+.my-client p{
+	padding: 15px 15px 0 15px;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.my-client p img{
+	margin-right: 2%;
+}
+
+/*информация о клиенте	*/
+.info-about-client {
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+}
+.info-about-client p{
+	margin: 2% 0 2% 0;
+	color:#5c5f6d;
+	font-size: 20px;
+
+}
+.info-about-client p span{
+	color:#353a4e;
+	font-size: 35px;
+}
+.info-about-client ul li {
+	list-style: none;
+}
+.info-about-client label {
+	color:#353a4e;
+	font-size: 11px;
+	letter-spacing: 2px;
+	padding-right: 10px;
+	float: right;
+}
+
+.info-about-client input {
+	height: 50px;
+	width: 330px;
+	color: #353a4e;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding: 10px;
+	margin: 10px;
+	border: 3px solid #d8e7e5;
+	border-radius: 5px;
+	-moz-box-shadow:inset 1px 1px 13px #ebddeb;
+	-webkit-box-shadow:inset 1px 1px 13px #ebddeb;
+	box-shadow:inset 1px 1px 5px #ebddeb;
+}
+.cabinet-notes-client {
+	margin-left: 3%;
+}
+.cabinet-notes-client label {
+	margin-top: 4%;
+}
+.info-about-client #notes-client{
+	font-size: 14px;
+}
+.info-about-client label:last-child {
+	padding-top: 30px;
+}
+
+.cabinet-my-client hr {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border: 0;
+	border-top: 2px solid #eceaeb;
+	width: 200%;
+}
+/*основные параметры*/
+.main-param-client h2{
+	margin: 5% 0 5% 0;
+}
+.main-param-client ul li:last-child {
+	margin-bottom: 40px;
+}
+.main-param-client .constraints {
+	width: 42%;
+	white-space: nowrap;
+}
+.limit-trans div{
+	padding-left: 0;
+	padding-right: 0;
+}
+.main-param-client .main-param-input {
+	width: 30%;
+}
+
+.main-param-client .main-param-floor input {
+	width: 30%;
+}
+/*дополнительные параметры*/
+
+/*стили для checkbox*/
+.show-more {
+	margin: 9% 14% 3% 3%;
+	float:right;
+}
+.checkbox {
+	display: none;
+}
+.checkbox-custom {
+	position: relative;
+	width: 26px;
+	height: 26px;
+	border: 3px solid #d8e7e5;
+	border-radius: 3px;
+	-moz-box-shadow:inset 1px 1px 13px #ebddeb;
+	-webkit-box-shadow:inset 1px 1px 13px #ebddeb;
+	box-shadow:inset 1px 1px 5px #ebddeb;
+}
+.checkbox-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: Rubik-Light, Helvetica sans-serif;
+	color:#192e4b;
+	font-size: 14px;
+}
+.checkbox:checked + .checkbox-custom::before {
+	content: url("../img/cabinet-check.png");
+	display: block;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	/*background: #413548;*/
+	/*border-radius: 2px;*/
+}
+.add-parametrs {
+	margin-bottom: 15%;
+}
+.add-parametrs ul li{
+	list-style: none;
+}
+.add-param-form  input{
+	height: 50px;
+	width: 330px;
+	color: #353a4e;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding: 10px;
+	margin: 10px;
+	border: 3px solid #d8e7e5;
+	border-radius: 5px;
+	-moz-box-shadow:inset 1px 1px 13px #ebddeb;
+	-webkit-box-shadow:inset 1px 1px 13px #ebddeb;
+	box-shadow:inset 1px 1px 5px #ebddeb;
+
+}
+.add-param-form label {
+	color:#353a4e;
+	font-size: 11px;
+	letter-spacing: 2px;
+	padding:24px 10px;
+	float:right;
+}
+.demands {
+	margin-top: 4%;
+}
+.demands h5{
+	margin-top: 0;
+}
+.add-parametrs .btn-search{
+	margin: 5% 0 8% 0;
+	padding: 5px 25px 5px 25px;
+	background-color: #f08544;
+	border: none;
+	border-radius: 3px;
+}
+.add-parametrs .btn-search a{
+	text-decoration: none;
+	color:#ffffff;
+}
+.cab-btn-save{
+	margin-top: 7%;
+	padding-left: 0;
+}
+.cab-btn-save button{
+	font-family: Rubik-Light, Helvetica sans-serif;
+	font-size: 17px;
+	color:#ffffff;
+	padding: 8px 27px 8px 26px;
+	border: none;
+	border-radius: 3px;
+	background: linear-gradient(to right, #63c7a0, #5fbec9);
+}
+.cab-btn-delete {
+	margin-top: 7%;
+}
+.cab-btn-delete button{
+	font-family: Rubik-Light, Helvetica sans-serif;
+	font-size: 17px;
+	background-color: #f9f7f6;
+	border: none;
+	color:#40aa81;
+	margin-top: 2%;
+}
+.cab-btn-delete button a{
+	text-decoration: none;
+	color:#40aa81;
+}
+
+/*------------------------------page cabinet-agency-------------------------------------------*/
+
+.cabinet-agency{
+    height: 60px;
+    margin: 0 0 2% 0;
+}
+.cabinet-block-agency {
+    background-color: #ffffff;
+    margin: 4% 0 4% 0;
+    padding-right: 0;
+    padding-left: 0;
+    box-shadow: 1px 1px 11px #a4a3a6;
+}
+.cabinet-realty-agency {
+    padding-top: 2%;
+}
+.cabinet-realty-agency h4{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.cabinet-realty-agency img{
+    float:left;
+    width: 164px;
+    height: 150px
+}
+.cabinet-realty-agency p{
+    line-height: 25px;
+}
+.cab-agency-btn{
+    margin: 3%;
+}
+.cab-agency-btn .btn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #c2c4ca;
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px;
+    margin: 4px 2px 0 0;
+}
+.cab-agency-btn a:hover {
+    text-decoration: none;
+    color:#353a4e;
+}
+.cabinet-region{
+    padding: 3% 2% 0 2%;
+    background-color: #f9f7f6;
+}
+.cabinet-region ul li{
+    list-style:  none;
+    margin-bottom: 15%;
+}
+.cabinet-region .btn {
+    background-color: #f08544;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 5px 14px 5px 14px;
+    margin: 47% 0 14% 0;
+}
+.cabinet-region .btn:hover {
+   text-decoration: underline;
+}
+
+.show-more-agency  {
+    margin: 3% 0 3% 0;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 7px #baa6ba;
+}
+.show-more-agency img {
+    text-align: center;
+    float: left;
+}
+.show-more-agency p {
+    font-size: 17px;
+    color: #5fbec9;
+    border-bottom: 2px dotted #5fbec9;
+    width: 75%;
+    margin: 2% 0 0 22%;
+}
+.show-more-agency  a:hover {
+    text-decoration: none;
+    color: #859d9b;
+}
+.show-more-agency  a:hover p {
+    text-decoration: none;
+    color: #859d9b;
+}
+.cabinet-pagination .pagination {
+    width: 100%;
+    margin: 2% 0 10% 0;
+}
+.cabinet-pagination .pagination-lg>li>a{
+    text-decoration: none;
+    color:#ffffff;
+    padding: 10px 18px;
+    background-color: #3e4358;
+    margin-left: 2px;
+    border-radius: 5px;
+}
+.pagination-lg .pagination-ellipsis a{
+    background-color: #e6e5e6 !important;
+    color:#b7b7b9 !important;
+    font-size:40px !important;
+    padding: 0 7px !important;
+    width: 46px;
+    height: 46px;
+}
+.cabinet-pagination .pagination-lg>li>a:hover{
+    text-decoration: none;
+    color:#b7b7b9;
+    background-color: #e6e5e6;
+}
+.cabinet-pagination .pagination-lg>li>a:focus,
+.cabinet-pagination .pagination-lg>li>a:active{
+    text-decoration: none;
+    background-color: #60c0c0;
+    box-shadow: 0 0 7px #60c0c0;
+}
+
+/*------------------------------page cabinet-add-realty-------------------------------------------*/
+
+.cabinet-add-realty {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 15px;
+	padding-right: 0;
+}
+.cabinet-add-realty h3{
+    letter-spacing: 5px;
+}
+.cab-realty-text{
+	font-size: 12px;
+	margin: 9% 0 1% 0;
+	padding: 1% 1% 0 1%;
+	background: linear-gradient(to right, #dbede5, #daeced);
+}
+.text-close{
+	float:right;
+	border:none;
+	background-color: transparent;
+	color:#afbbc3;
+	font-size: 30px;
+	margin: -2% -1% 0 0;
+}
+.cabinet-your-ad h2 {
+	font-size: 25px;
+	margin: 4% 0 6% 0;
+	letter-spacing: 5px;
+}
+.cabinet-your-ad ul li{
+	list-style: none;
+}
+.cabinet-your-ad ul li a{
+	font-family: Rubik-Light, Helvetica sans-serif;
+	font-size: 12px;
+	color:#5fbec9;
+	padding: 3px 24px 3px 24px;
+	background-color: #daeced;
+	border-radius: 3px;
+}
+.cabinet-your-ad ul li a:active,
+.cabinet-your-ad ul li a:focus,
+.cabinet-your-ad ul li a:hover{
+	background-color: #5fbec9;
+	color:#ffffff;
+}
+.cabinet-your-ad .cab-type-deal{
+	margin:0 20% 3% 0;
+}
+.cab-type-lease{
+	margin:0 1% 3% 0;
+}
+.cabinet-your-ad .cab-type-deal label,
+.cabinet-your-ad .cab-type-lease label{
+	padding-top: 3%;
+}
+.cabinet-your-ad .js-example-basic-single,
+.cabinet-your-ad input {
+	height: 50px;
+	width: 370px;
+	color: #353a4e;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding: 10px;
+	margin: 0 0 10px 0;
+	border: 3px solid #d8e7e5;
+	border-radius: 5px;
+	-moz-box-shadow: inset 1px 1px 13px #ebddeb;
+	-webkit-box-shadow: inset 1px 1px 13px #ebddeb;
+	box-shadow: inset 1px 1px 5px #ebddeb;
+}
+.cabinet-your-ad label {
+	color: #353a4e;
+	font-size: 11px;
+	letter-spacing: 2px;
+	padding-right: 10px;
+}
+.cabinet-your-ad  label{
+	float: right;
+	padding-top: 10%;
+}
+.cabinet-your-ad .select2-selection {
+	height: 48px !important;
+	border: 3px solid #d8e7e5 !important;
+	border-radius: 5px !important;
+	-moz-box-shadow: inset 1px 1px 13px #ebddeb;
+	-webkit-box-shadow: inset 1px 1px 13px #ebddeb;
+	box-shadow: inset 1px 1px 5px #ebddeb !important;
+	margin-bottom:5%;
+}
+.cabinet-your-ad .select2-selection__arrow {
+	height: 8px !important;
+	width: 12px !important;
+	margin: 6%;
+	position: absolute;
+}
+.cabinet-add-realty hr{
+	width: 174%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 3px solid #eceaeb;
+}
+.cabinet-adress-map h3{
+	font-size: 25px;
+	letter-spacing: 5px;
+}
+/*#cabinet-map{*/
+	/*width: 1072px;*/
+	/*height: 430px;*/
+	/*margin:4% 0 5% 0;*/
+/*}*/
+.cab-param-object h3{
+	font-size: 25px;
+	letter-spacing: 5px;
+	margin-bottom: 7%;
+}
+.cab-param-object form{
+	margin-bottom: 5%;
+}
+/*.cab-param-object .cab-pram-floor {*/
+	/*margin-left: 31%;*/
+/*}*/
+.total-sign,
+.cab-pram-floor span{
+	font-weight: 700;
+	color: #353a4e;
+	font-size: 11px;
+	letter-spacing: 2px;
+	padding-right: 10px;
+}
+
+.cab-param-object .cab-pram-floor input {
+	width: 13%;
+	margin-right: 3%;
+}
+.total-sign{
+	font-weight: 700;
+	color: #353a4e;
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+/*стилизация radio button*/
+.cab-param-window .radio {
+	 display: none;
+ }
+.cab-param-window .radio-custom {
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	position: relative;
+	padding: 5px;
+}
+
+.cab-param-window .radio-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.cab-param-window .radio:checked +  .radio-custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	bottom: 4px;
+	left: 4px;
+	background: #61c3b3;
+	border-radius: 16px;
+}
+.cab-param-window .radio-custom,
+.cab-param-window .radio:checked + .radio-custom::before {
+	border-radius: 50%;
+}
+
+.cab-param-window .label {
+	letter-spacing: 1px;
+}
+.cab-param-window label{
+	padding: 0 0 4% 0;
+	float:left;
+}
+.cab-param-label{
+	margin-right: 4%;
+	float:right !important;
+}
+.cab-param-type {
+	margin-right: 0;
+}
+/*цена и условия*/
+/*.cab-coast2,*/
+/*.cab-coast {*/
+    /*margin:8% 0 -4% -12%;*/
+/*}*/
+.cab-realty-credit input {
+	width: 180px;
+}
+.cab-realty-credit .js-example-basic-single,
+.cab-realty-credit .select2-selection{
+	width: 165px;
+}
+.cab-realty-credit-label{
+	padding-left: 0;
+	padding-right: 0;
+}
+.cab-realty-credit .select2-selection__arrow {
+    margin: 10%;
+}
+.cab-realty-credit {
+    margin-left: -2%;
+    margin-right: 0;
+}
+.cab-coast-object{
+	margin-left: 2%;
+    margin-top: -3%;
+}
+.cab-coast-object .cab-coast-two {
+	position: relative;
+	padding-left: 14.5%;
+	padding-right: 0;
+}
+.cab-coast-object .cab-coast-text{
+   font-size: 12px;
+}
+.cabinet-video-block hr,
+.cabinet-photos-block hr,
+.cabinet-price-condition hr{
+  width: 100%;
+}
+.cabinet-price-condition form{
+	margin-left: 2%;
+}
+/*блок с фотографиями недвижимости*/
+.cab-download-photos{
+    background-color: #efeeee;
+    margin: 2% 0 2% 0;
+    padding: 4% 0 3% 3.5%;
+}
+.cab-download-photos ul li {
+    list-style: none;
+    margin: 0 -7px 2% -7px;
+}
+.cab-download-photos ul li:last-child {
+   margin-right: 0;
+}
+.cab-download-photos ul li img{
+    width: 100px;
+    height: 100px;
+}
+.cab-download-photos ul li button {
+    background-color: #aaadb3;
+    color: #ffffff;
+    font-size: 17px;
+    border: none;
+    border-radius: 50%;
+    padding: 0 5px 0 5px;
+    vertical-align: top;
+    margin: -19% 0 0 -6%;
+}
+.cab-download-photos .cab-bg-photos {
+    background-image: url(../img/cabinet-camera.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #d6d8db;
+    margin: 2% 1% 2% 1%;
+    vertical-align: middle;
+}
+.cab-link-video button,
+.cabinet-photos-block button{
+    font-family: Rubik-Light, Helvetica sans-serif;
+    font-size: 17px;
+    color:#ffffff;
+    padding: 10px 27px 10px 26px;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(to right, #63c7a0, #5fbec9);
+    margin-left: 30%;
+    margin-top: 1%;
+}
+.cabinet-video-block {
+    margin: 2% 0 0 0;
+}
+.cab-link-video ul li {
+    list-style: none;
+    margin-bottom: 1%;
+}
+.cab-link-video input{
+    letter-spacing: 0;
+}
+.cab-link-video button{
+    margin: 0 0 2% 0;
+}
+
+.cab-download-file {
+    padding: 0 0 3% 3.5%;
+}
+.cab-download-file ul {
+   margin-top: 2%;
+}
+.cab-download-file .cab-bg-photos {
+    background-image: url(../img/cabinet-file.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #d6d8db;
+    margin: 3% 1% 2% 1%;
+    vertical-align: middle;
+}
+.cab-download-file .uploaded-file{
+   display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #e6e7e9;
+    margin: 0 10px 0 10px;
+    padding-top: 3%;
+    text-align: center;
+    color:#d6d8db;
+}
+.cab-download-file .uploaded-file button {
+    position: absolute;
+    margin: -8% 0 0 4%;
+}
+/*подробное описание вашей недвижимости*/
+
+.cab-description-realty{
+    margin: 2% 0 12% 0;
+}
+.cab-description-realty label{
+    font-size: 11px;
+    margin: 7% 0 2% 0;
+}
+.description-ru, .description-ukr{
+    padding-left: 0;
+}
+.description-ukr textarea,
+.description-ru textarea {
+    color: #353a4e;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding:10px;
+    margin: 0 0 10px 0;
+    border: 3px solid #d8e7e5;
+    border-radius: 5px;
+    -moz-box-shadow: inset 1px 1px 13px #ebddeb;
+    -webkit-box-shadow: inset 1px 1px 13px #ebddeb;
+    box-shadow: inset 1px 1px 5px #ebddeb;
+    resize: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.description-ukr label,
+.description-ukr textarea{
+    margin-left: 5%;
+}
+.cab-description-realty input[type=checkbox] {
+    margin: 4px 11px 2px;
+    margin-top: 1px\9;
+    line-height: normal;
+    width: 20px;
+    height: 20px;
+}
+.check-btn label{
+    font-family: Rubik-Light, Helvetica sans-serif;
+    margin-top: 3%;
+    font-size: 14px;
+}
+.cab-description-realty button {
+    background-color: #f08544;
+    padding: 14px 35px 12px 35px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/*--------------------------page cabinet-reg-agency------------------------------------------------------------------------------------*/
+
+
+.cab-add-position{
+    padding-left: 0;
+}
+.cab-add-position ul li{
+    list-style: none;
+    margin: 3% 0 3% -3%;
+
+}
+.cab-add-text h5,
+.cab-agency-services h5{
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 10% 0 0 19%;
+}
+.cab-add-text h5 {
+    margin: 24% 0 3% 36%;
+}
+.cab-add-text textarea {
+    margin: 10% 0 3% -4%;
+}
+.cab-add-text button {
+    font-family: Rubik-Light, Helvetica sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    padding: 13px 52px 13px 52px;
+    border: none;
+    border-radius: 2px;
+    background: linear-gradient(to right, #63c7a0, #5fbec9);
+    margin:6% 0 10% -3%;
+}
+.cab-add-logo p{
+    font-size: 12px;
+}
+.cab-add-logo button{
+    margin: 5% 0 5% 0;
+}
+.cab-add-logo .cab-download-photos {
+    margin: 2% 0 5% 0;
+}
+.cab-reg-agency{
+    margin-top: -3%;
+}
+.check-btn .checkbox-custom{
+   box-shadow: none;
+}
+.cab-reg-agency button {
+    background-color: #f08544;
+    padding: 14px 35px 12px 35px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 12%;
+}
+
+/*--------------------------page cabinet-client-card------------------------------------------------------------------------------------*/
+
+
+.cab-add-proposal p{
+	font-size: 20px;
+	margin: 2% 0 6% 0;
+	letter-spacing: 4px;
+}
+.cab-add-proposal p span{
+	font-size: 35px;
+	color:#353a4e;
+}
+.cab-add-proposal h4{
+	font-size: 20px;
+	color:#353a4e;
+	margin-bottom: 4%;
+}
+.cab-add-proposal label {
+	font-size: 11px;
+	margin-left: 4%;
+	font-weight: inherit;
+}
+.cab-add-proposal .select2-container--default .select2-selection--single {
+	background-color: #ebedf5;
+	border-radius: 3px !important;
+}
+.cab-add-proposal .select2-selection__arrow {
+	height: 8px !important;
+	width: 12px !important;
+	margin: 7%;
+	position: absolute;
+}
+
+.cab-rating h5{
+	font-family: Rubik-Medium, Helvetica sans-serif;
+	font-size: 17px;
+	color:#f08544;
+}
+.cab-rating .rating-bold{
+	font-family: Rubik-bold, Helvetica sans-serif;
+}
+
+.cab-new-object{
+	background-color: #e7f1ec;
+	padding: 2% 1% 2% 1%;
+	margin: 2% 0 2% 0;
+}
+.cab-new-object ul li{
+	list-style: none;
+	padding-top: 2%;
+}
+.cab-profile{
+	font-size: 13px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.cab-profile ul li{
+	padding-top: 4%;
+}
+.cab-profile a{
+	text-decoration: underline;
+	padding-top: 2%;
+}
+
+.cab-btn-search {
+    margin: 3% 0 0 0;
+}
+.cab-btn-search a {
+    text-decoration: none;
+    color:#7dcead;
+    font-size: 15px;
+    margin-right: 1%;
+    padding: 5px 15px 5px 15px;
+    border-radius: 3px;
+    border: 1px solid #63c7a0;
+    background-color: transparent;
+}
+.cab-btn-search a:active,
+.cab-btn-search a:focus,
+.cab-btn-search a:hover{
+    text-decoration: none;
+    color:#ffffff;
+    background-color: #90d5ba;
+}
+.cab-stop-search{
+    margin: 4% 0 5% 0;
+    font-size: 17px;
+}
+.cab-stop-search a{
+   text-decoration: none;
+    color:#5fbec9;
+    border-bottom: 1px dotted #5fbec9;
+}
+.cab-stop-search a:hover{
+    text-decoration: none;
+    color:#63c7a0;;
+}
+
+/*--------------------------page cabinet-my-agency -------------------------------------------------------------------------------------*/
+.cab-realty-odessa{
+    margin: 2% 0 2% 0;
+}
+.cab-realty-odessa .cab-logo-realty {
+    background-color: #ffffff;
+    width: 200px;
+    height: 200px;
+    -moz-box-shadow:  0 0 5px #5fbec9;
+    -webkit-box-shadow:  0 0 5px #5fbec9;
+    box-shadow: 0 0 5px #5fbec9;
+}
+.cab-odessa-block h4{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 6% 3% 0 0;
+    float:left;
+}
+.cab-odessa-block img{
+    margin: 4% 0 0 0;
+
+}
+.cab-odessa-block p{
+    margin: 2% 3% 3% 0;
+    line-height: 25px;
+    font-size: 15px;
+
+}
+.cab-odessa-block p strong{
+    margin-bottom: 2%;
+    line-height: 25px;
+}
+.cab-agency-spec{
+    margin-top: 10%;
+}
+.cab-agency-spec p{
+    font-family: Rubik-Medium, Helvetica sans-serif;
+    font-size: 15px;
+    margin-top: 5%;
+}
+.cab-agency-address{
+    margin: 2% 0 2% 0;
+    padding: 2% 2% 5% 2%;
+    background-color: #ffffff;
+    -moz-box-shadow:  0 0 13px #5fbec9;
+    -webkit-box-shadow:  0 0 13px #5fbec9;
+    box-shadow: 0 0 13px #5fbec9;
+}
+.cab-agency-address ul li{
+    list-style: none;
+}
+.cab-agency-edit li{
+    margin-bottom: 2%;
+}
+.cab-agency-edit li a{
+    text-decoration: none;
+    color:#5fbec9;
+    border-bottom: 1px dotted #5fbec9;
+}
+.cab-agency-edit li a:hover{
+    text-decoration: none;
+    color:#63c7a0;;
+}
+.cab-agency-address hr{
+    width: 100%;
+}
+.cab-property-sale h3{
+	font-size: 20px;
+	margin: 6% 0 1% 0;
+}
+.cab-property-sale h3 a{
+	font-size: 14px;
+	text-decoration: none;
+	color:#5fbec9;
+	border-bottom: 1px dotted #5fbec9;
+	letter-spacing: 0;
+}
+.cab-property-sale h3 a:hover{
+	text-decoration: none;
+	color:#63c7a0;
+}
+
+/*--------------------------page cabinet-clients-------------------------------------------------------------------------------------*/
+
+.cab-clients  .form-group {
+	font-family: Rubik-Regular, Helvetica sans-serif;
+	margin: 3% 0 3% 0;
+	padding: 1.6% 2.3% 2% 1%;
+	font-size: 12px;
+	color: #ffffff;
+	background: linear-gradient(to right, #63c7a0, #5fbec9);
+}
+
+.cab-clients .add-new-client{
+	background-color: #f08544;
+	padding: 14px 35px 12px 35px;
+	font-size: 16px;
+	color: #ffffff;
+	margin: 3% 0 0 0;
+	-moz-box-shadow:  0 0 13px #f08544;
+	-webkit-box-shadow:  0 0 13px #f08544;
+	box-shadow: 0 0 13px #f08544;
+}
+.cab-clients .add-new-client:hover{
+	color:#63c7a0;
+}
+.table-info-clients{
+	margin-bottom: 5%;
+}
+.table-info-clients .table-param{
+	margin-bottom: 4%;
+}
+.table-info-clients .table-param thead tr th{
+	font-size: 12px;
+	width: 14.2% !important;
+}
+.table-info-clients .table-param tbody tr td{
+	font-family: Rubik-Regular, Helvetica sans-serif;
+	font-size: 12px;
+	color:#2b2e3d;
+	line-height: 25px;
+	width: 14.2% !important;
+}
+.table-info-clients .table-param tbody tr td:hover{
+	background-color: #fce7da;
+}
+.cab-client-star {
+	margin: -50% 0 25% 0;
+}
+.suitable-object li:first-child{
+	color:#f08544;
+	font-size: 14px;
+	margin-bottom: 5%;
+}
+/*--------------------------page cabinet-blacklist-realtors-------------------------------------------------------------*/
+.cabinet-realtors {
+	height: 60px;
+	margin: 3% 0 2% 0;
+	background-color: #787c8d;
+	padding: 2% 2% 1% 3%;
+}
+.cabinet-block-realtors img,
+.cabinet-realtors img {
+	float: left;
+}
+.cabinet-realtors h4 {
+	color:#ffffff;
+	margin-left: 4%;
+}
+.cabinet-block-realtors {
+	background-color: #dcdddf;
+	margin: 4% 0 4% 0;
+	box-shadow: 1px 1px 11px #a4a3a6;
+}
+.cabinet-block-realtors ul li{
+	overflow: hidden;
+	line-height: 22px;
+	list-style: none;
+}
+.cabinet-photo-realtor {
+	padding: 4% 2% 2% 2%;
+}
+.cabinet-photo-realtor img {
+    width: 103px;
+    height: 103px;
+	float: left;
+	margin: 2% 9% 6% 2%;
+	box-shadow: 0 0 0 8px #dcdddf, 0 0 0 16px #cccdd1;
+	border-radius: 50%;
+}
+.cab-realtors-btn .btn {
+	background-color: #8d909b;
+}
+.cabinet-region .remove-list{
+	font-family: Rubik-Regular, Helvetica sans-serif;
+	margin: 12% 0 0 0;
+	padding: 3px 14px 3px 14px;
+	font-size: 14px;
+	color: #ffffff;
+	border-radius: 2px;
+	background: linear-gradient(to right, #63c7a0, #5fbec9);
+}
+.cabinet-region .more-detailed{
+	margin: 14% 0 14% 0;
+}
+/*--------------------------media-------------------------------------------------------------------------------------*/
+.realty-id{
+	position: absolute;
+	top:10%;
+	left:0;
+	color:#ffffff;
+	font-size: 13px;
+	padding: 4px 30px 4px 15px;
+	background-color: #8d909b;
+	z-index: 1;
+}
+
+.cabinet-my-realty-house {
+	padding-right: 0;
+}
+
+.cabinet-my-realty-house .cab-realty-caption {
+	margin: 0 0 2% 0;
+}
+.cabinet-my-realty-house .cab-new-search {
+	margin: 3% 0 0 5%;
+
+}
+.cabinet-my-realty-house .cab-new-search span{
+	font-family: Rubik-Medium, Helvetica sans-serif;
+	color:#f08544;
+}
+.cabinet-my-realty-house .realty-edit ul li {
+	padding-bottom: 4%;
+}
+/*--------------------------page SETTINGS-------------------------------------------------------------------------------------*/
+.settings-field{
+	margin-bottom: 30%;
+}
+.settings-field a{
+	text-decoration: none;
+	color:#63c7a0;
+	padding: 6px 20px 6px 20px;
+	font-size: 14px;
+	border: 1px solid #63c7a0;
+	border-radius: 2px;
+	margin: 6% 2% 10% 0;
+}
+.settings-field a:active,
+.settings-field a:focus,
+.settings-field a:hover{
+	text-decoration: none;
+	color:#ffffff;
+	background-color:#63c7a0;
+}
+.settings-field .active-btn{
+	color:#ffffff;
+	background-color:#63c7a0;
+}
+.settings-field p{
+	color:#353a4e;
+	letter-spacing: 3px;
+}
+.settings-field .setting-email{
+	color:#63c7a0;
+	margin: 7% 1% 1% 36%;
+}
+.settings-field .settings-change a{
+	text-decoration: none;
+	color:#ffffff;
+	padding: 9px 32px 9px 33px;
+	font-size: 16px;
+	background-color: #f08544;
+	border: none;
+	border-radius: 2px;
+	margin: 4% 2% 10% 36%;
+	box-shadow: 0 0 11px  #f08544;
+}
+.settings-field .settings-change a:hover{
+	color:#f08544;
+	border: 1px solid #f08544;
+	background-color: transparent;
+}
+.settings-field a .active-btn{
+	color:#ffffff;
+	background-color:#63c7a0;
+}
+/*--------------------------page setting-password-------------------------------------------------------------------------------------*/
+.settings-password input{
+	font-size: 20px;
+	color:#bfbfc1;
+}
+
+.settings-password input:active,
+.settings-password input:focus,
+.settings-password input:hover{
+	border-color:#b7d3cb;
+}
+/*--------------------------page setting-notice-------------------------------------------------------------------------------------*/
+.settings-notice .checkbox {
+	display: none;
+}
+.settings-notice .checkbox-custom {
+	margin: 0 10px 0 20px;
+}
+.settings-notice p{
+	letter-spacing: 5px;
+}
+.settings-notice .info-about-client label:last-child {
+	padding-top:0;
+}
+.settings-notice ul li{
+	margin-bottom: 5%;
+	padding-bottom: 20px;
+}
+.settings-notice ul li p{
+	font-weight: 700;
+	color: #353a4e;
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-align: right;
+}
+
+/*--------------------------page setting-remove-------------------------------------------------------------------------------------*/
+.settings-remove .remove-btn:hover {
+	color: #f08544;
+	border: 1px solid #f08544;
+	background-color: transparent !important;
+}
+
+.settings-remove .remove-btn {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 9px 32px 9px 33px;
+	font-size: 16px;
+	background-color: #f08544;
+	border: none;
+	border-radius: 2px;
+	margin: 4% 2% 10% 0;
+	box-shadow: 0 0 11px #f08544;
+}
+/*--------------------------page cabinet-profile-----------------------------------------------------------------------*/
+.cab-profile-birthday{
+	margin-left: -4%;
+}
+
+.cab-profile-birthday input {
+	width: 29%;
+	margin-left: 13px;
+}
+.cab-profile-birthday label {
+	margin:0 -12px 0 13px;
+}
+.cab-profile-sex .your-sex{
+	float:right;
+	margin-right: 10px;
+}
+.cab-profile-photo button {
+	font-family: Rubik-Light, Helvetica sans-serif;
+	font-size: 17px;
+	color: #ffffff;
+	padding: 10px 27px 10px 26px;
+	border: none;
+	border-radius: 3px;
+	background: linear-gradient(to right, #63c7a0, #5fbec9);
+}
+.cab-profile-photo .cab-download-photos {
+	padding: 4% 0 3% 5.5%;
+}
+.cabinet-profile-spec .checkbox{
+	display: none;
+}
+.cabinet-profile-spec{
+	padding-left: 0;
+}
+.cabinet-profile-spec ul li {
+	margin-bottom: 2%;
+	float:left;
+
+}
+
+/*-------------------------page cabinet-realtors-------------------------------------------------------------------------------------*/
+
+.сab-my-realtor .cabinet-realtors h4 {
+	letter-spacing: 3px;
+	margin-left: 6%;
+}
+.сab-my-realtor .cabinet-block-realtors {
+	background-color: #ffffff;
+}
+.сab-my-realtor .cabinet-region .remove-list {
+	padding: 6px 22px 6px 22px;
+	font-size: 15px;
+}
+
+/*--------------------------page cabinet-support----------------------------------------------------------------------*/
+.cabinet-support{
+	background-color: #f2f5f3;
+	padding: 3%;
+	margin: 3% 0 6% 0;
+}
+.contact-textarea{
+    padding-left: 0;
+}
+.cabinet-support .info-about-client label {
+	float: left;
+}
+.cabinet-support h5{
+ font-size: 15px;
+	margin-bottom: 3%;
+}
+.cabinet-support h5 a{
+	text-decoration: none;
+	color:#63c7a0;
+}
+.cabinet-support .info-about-client input {
+	height: 50px;
+	width: 330px;
+	color: #353a4e;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding: 10px;
+	margin: 0;
+	border: 3px solid #d8e7e5;
+	border-radius: 5px;
+	-moz-box-shadow: inset 1px 1px 13px #ebddeb;
+	-webkit-box-shadow: inset 1px 1px 13px #ebddeb;
+	box-shadow: inset 1px 1px 5px #ebddeb;
+}
+.cabinet-support .info-about-client textarea {
+	height: 120px;
+	resize: none;
+	overflow: auto;
+	color: #353a4e;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding: 10px;
+	margin: 0;
+	border: 3px solid #d8e7e5;
+	border-radius: 5px;
+	-moz-box-shadow: inset 1px 1px 13px #ebddeb;
+	-webkit-box-shadow: inset 1px 1px 13px #ebddeb;
+	box-shadow: inset 1px 1px 5px #ebddeb;
+}
+.cabinet-support .capch-block{
+	width: 300px;
+	height: 210px;
+	background: linear-gradient(to right, #63c7a0, #5fbec9);
+}
+.cabinet-support .btn{
+	text-decoration: none;
+	margin: 2% 0 2% 0;
+	padding: 8px 30px 8px 30px;
+	background-color: #f08544;
+	font-size: 17px;
+	color: #ffffff;
+}
+.info-about-client textarea:hover,
+.info-about-client textarea:focus,
+.info-about-client textarea:active,
+ .info-about-client input:active,
+ .info-about-client input:focus,
+.info-about-client input:hover{
+	border-color:#b7d3cb;
+}
+
+/*--------------------------page Cabinet-object-------------------------------------------------------------------------------------*/
+.cabinet-object{
+    margin: 2% 0 2% 0;
+}
+.cabinet-object-name{
+   font-size: 25px;
+    margin-bottom: 2%;
+    letter-spacing: 5px;
+}
+/*правый сайдбар*/
+.cab-aside-shadow{
+	box-shadow: 0 0 11px  #63c7a0;
+}
+.cab-object-coast {
+    background-color: #f08544;
+    text-align: center;
+    color: #ffffff;
+    padding: 4%;
+    /*margin-left: 10px;*/
+    line-height: 22px;
+}
+.cab-object-coast span{
+    font-family: Rubik-Medium, Helvetica sans-serif;
+    font-size: 25px;
+}
+.cab-object-coast p{
+    font-size: 15px;
+    color:#f5b187;
+}
+.cab-object-about-author{
+    background-color: #ffffff;
+    padding: 2%;
+}
+ .cabinet-avatar img {
+    height: 75px;
+    width: 75px;
+    margin: 15% 0 10% 0;
+    border-radius: 50%;
+    padding: 10%;
+    background-color: #f2f3f4;
+}
+
+.cab-object-about-author ul li{
+    list-style: none;
+    margin-top: 1%;
+    color:#2b2e3d;
+    font-size: 15px;
+}
+.cab-object-about-author .author-name{
+    font-family: Rubik-Medium, Helvetica sans-serif;
+    font-size: 20px;
+    margin-bottom: 4%;
+}
+.cab-object-about-author .author-tel{
+    margin-bottom: 4%;
+}
+.cab-object-about-author ul li:nth-child(7){
+    margin: 4% 0 4% 0;
+    color:#9094a2;
+    font-size: 12px;
+}
+.cab-object-about-author hr{
+   border: 1px solid #ebecee;
+}
+.cab-object-location {
+    margin: 5% 5% 7% 7%;
+}
+.cab-object-location li img{
+    margin-right: 3%;
+}
+.cab-object-location li a{
+    text-decoration: underline;
+    color:#60c0c1;
+    margin-bottom: 2%;
+}
+.cab-object-location ul li {
+    color:#9094a2;
+    margin-top: 1%;
+}
+.cab-object-location ul li:nth-child(1) {
+    margin-bottom: 6%;
+}
+.cab-object-settings{
+    padding: 3%;
+}
+.cab-object-settings ul li a{
+    text-decoration: underline;
+    color:#60c0c1;
+    margin: 3% 2% 2% 8%;
+}
+.cab-object-settings p{
+    margin: 7% 0 5% 3%;
+    color:#9094a2;
+    font-size: 13px;
+}
+.cab-object-settings p img{
+    margin-right: 3%;
+}
+/*.cab-object-photo-block {*/
+	/*margin-top: -1.6%;*/
+/*}*/
+ /*стили для галерей фотографий*/
+/*.jgallery[data-jgallery-id="1"] .zoom-container .nav-bottom .icons, .jgallery[data-jgallery-id="1"] .zoom-container .nav-bottom .icons .fa {*/
+	/*display: none;*/
+/*}*/
+/*.jgallery .zoom-container .nav .jgallery-btn {*/
+	/*display: none;*/
+/*}*/
+/*.jgallery .zoom-container .nav {*/
+	/*z-index: -1;*/
+/*}*/
+/*.jgallery .zoom-container .prev {*/
+	/*content: url(../img/carousel-arrow-left.png);*/
+	/*background: #7d7f8d;*/
+	/*width: 20px;*/
+	/*height: 30px;*/
+	/*padding: 2%;*/
+	/*top: 50%;*/
+	/*right: -74px;*/
+	/*opacity: 0.7;*/
+/*}*/
+
+/*.jgallery .zoom-container .next {*/
+	/*content: url(../img/carousel-arrow-right.png);*/
+	/*background: #7d7f8d;*/
+	/*width: 20px;*/
+	/*height: 30px;*/
+	/*padding: 2%;*/
+	/*top: 50%;*/
+	/*right: -74px;*/
+	/*opacity: 0.7;*/
+/*}*/
+/*.jgallery[data-jgallery-id="1"] .jgallery-btn {*/
+	/*color: #ffffff;*/
+/*}*/
+/*.jgallery .zoom img {*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+/*}*/
+/*.jgallery .jgallery-thumbnails-bottom.images:not(.full-screen),*/
+/*.jgallery-container-inner,*/
+/*.jgallery .jgallery-thumbnails.jgallery-thumbnails-bottom.images.images:not(.full-screen),*/
+/*.jgallery-container-inner {*/
+	/*background-color: #f9f7f6;*/
+	/*border: none;*/
+/*}*/
+/*.pt-item {*/
+	/*background-color: #f9f7f6;*/
+/*}*/
+/*.title {*/
+	/*display: none;*/
+/*}*/
+/*.nav-bottom{*/
+	/*!*display: none !important;*!*/
+	/*background-color: #f9f7f6;*/
+/*}*/
+/*.jgallery-container-inner a img{*/
+	/*margin: -5% 2% 2% 2%;*/
+/*}*/
+/*.jgallery[data-jgallery-id="1"] .jgallery-thumbnails a {*/
+	/*width: 75px;*/
+	/*height: 75px;*/
+	/*font-size: 75px;*/
+	/*margin: 0 10px;*/
+/*}*/
+/*.jgallery .jgallery-standard .jgallery-tooltips .jgallery-hide-draggable-navigation-on-mobile .text-shadow .has-title {*/
+	/*width: 100%;*/
+	/*height: 566px !important;*/
+/*}*/
+
+/*описание недвижимости*/
+.cab-description-realty{
+	background-color: #f2f1f1;
+	padding: 4%;
+	margin-top: 5%;
+}
+table tbody tr td {
+	height: 35px;
+	padding: 3%;
+	width: 1%;
+}
+table .white-stripe {
+	background-color: #ffffff;
+}
+table tbody tr td span {
+	font-family:Rubik-Medium, Helvetica sans-serif;
+}
+.cab-description-realty hr{
+	border: 1px solid #cdcdd0;
+}
+.cab-description-apartment {
+	margin: 2% 0 2% 0;
+	font-size: 15px;
+	color:#3e4358;
+}
+
+.cab-description-apartment p {
+	font-family: Rubik-Light, Helvetica sans-serif;
+	margin: 4% 0 2% 0;
+	font-size: 17px;
+	color:#f08544;
+}
+
+/*-------------------------page Cabinet-blacklist-realty------------------------------------------------------------------------------------*/
+.cab-blacklist-realty .cabinet-realtors h4 {
+	margin: 0 0 0 7%;
+	letter-spacing: 5px;
+}
+.cab-btn-lease a {
+	text-decoration: none;
+	color: #63c7a0;
+	padding: 6px 20px 6px 20px;
+	font-size: 14px;
+	border: 1px solid #63c7a0;
+	border-radius: 2px;
+	margin: 1% 2% 3% 0;
+}
+.cab-btn-lease a:hover {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #63c7a0;
+}
+table tbody tr .blue-stripe{
+	background-color: #dcdddf;
+}
+.cab-btn-delete{
+	padding: 1% !important;
+	text-align: left !important;
+}
+.cab-btn-delete p{
+	margin: 0 0 80% 0;
+}
+.cab-btn-delete a{
+	text-decoration: none;
+	color:#ffffff;
+	font-size: 15px;
+	margin-bottom: 5%;
+}
+.cab-btn-delete .btn-table-delete{
+	text-decoration: none;
+	padding: 4px 12px 4px 12px;
+	background: linear-gradient(to right, #63c7a0, #5fbec9);
+}
+.btn-table-more {
+	text-decoration: none;
+	padding: 4px 12px 4px 12px;
+	background-color: #f08544;
+}
+
+/*--------------------------page Cabinet-my-wallet------------------------------------------------------------------------------------*/
+.cabinet-my-wallet{
+	margin-bottom: 20%;
+}
+
+.cabinet-my-wallet .cabinet-realtors h4 {
+	margin: 0 0 0 6%;
+	letter-spacing: 5px;
+}
+.cabinet-my-wallet-form ul li{
+    list-style: none;
+	margin-top: 8%;
+}
+.cabinet-my-wallet-form label{
+	margin-top: 2%;
+	font-size: 11px;
+}
+.cabinet-my-wallet-form ul li input{
+	height: 40px;
+	width: 100%;
+	background-color: #ebedf5;
+	padding: 3%;
+	border-radius: 2px;
+}
+.cabinet-my-wallet-form .select2-container--default .select2-selection--single {
+	background-color: #ebedf5;
+	border-radius: 2px;
+}
+.cabinet-my-wallet-form .select2-selection__arrow {
+	margin: 7%;
+}
+.cabinet-my-wallet-form ul li a{
+	text-decoration: none;
+	color:#ffffff;
+	font-size: 17px;
+	padding: 7px 46px 7px 46px;
+	border-radius: 2px;
+	background-color: #f08544;
+	box-shadow: 0 0 11px  #f08544;
+}
+
+/*стили для сайдбара*/
+.cab-wallet-sidebar{
+	margin-top: 2%;
+	padding: 2% 4% 4% 4%;
+	background-color: #ffffff;
+	box-shadow: 0 0 11px  #63c7a0;
+}
+.cab-wallet-balance{
+	margin: 2% 10% 10% 10%;
+	height: 80px;
+	background-color: #f5f5f6;
+	padding: 5% 2% 4% 2%;
+	text-align: center;
+}
+.cab-wallet-balance h2{
+	margin-top: 0;
+}
+.cab-wallet-balance p{
+	margin-bottom: 0;
+	color:#787c8d;
+	font-size: 15px;
+}
+.cab-wallet-sidebar a{
+	text-decoration: underline;
+	color:#5fbec8;
+}
+.cab-sidebar-services .cab-sidebar-add{
+	font-family: Rubik-Medium, Helvetica sans-serif;
+	color:#2b2e3d;
+	margin: 10% 0 10% 4%;
+}
+.cab-sidebar-services ul li{
+	list-style: none;
+	margin-bottom: 8%;
+}
+.cab-sidebar-services h5{
+	color:#f15b00;
+	margin-bottom: 5px;
+}
+.cab-sidebar-services ul li p{
+	font-size: 13px;
+	color:#787c8d;
+	margin-left: 5%;
+}
+.cab-sidebar-services ul li img{
+	margin: 0 3% 0 -3%;
+}
+
+
+
+/*стили для карусели кабинет объекты*/
+ul{
+	list-style: none outside none;
+	padding-left: 0;
+	margin: 0;
+}
+.demo .item{
+	margin-bottom: 60px;
+}
+.demo ul li img{
+	width:100%;
+	height: auto;
+}
+.content-slider li{
+	background-color: #ed3020;
+	text-align: center;
+	color: #FFF;
+}
+.content-slider h3 {
+	margin: 0;
+	padding: 70px 0;
+}
+/*.demo{*/
+	/*width: 800px;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------media-------------------------------------------------------------------------------------*/
+@media (max-width: 1700px) and (min-width: 320px) {
+
+}
+@media (max-width: 1500px) and (min-width: 320px) {
+	.footer-appstore img{
+		width: 112px;
+		height: 40px;
+	}
+
+}
+@media (max-width: 1300px) and (min-width: 320px) {
+
+}
+@media (max-width: 1199px) and (min-width: 320px) {
+	.header-logo h5{         /*main menu*/
+		font-size: 11px;
+		margin-right: 0;}
+
+	.btn-search {             /*index.html form*/
+		margin: 28% 0 0 -22%;}
+	.form-group-realty .btn-search {  /*problem-realty form*/
+		margin: 33% 0 0 5%;
+	}
+
+	.form-search .label {
+		margin: 0 0 0 -99%;}
+
+	.search-result .form-search .checkbox-custom {  /*buy-house.html form*/
+		margin-left: -27%;}
+
+	.search-result-block .filter img {
+		float: left;}
+
+	.search-result-block .advanced-search {
+		margin: 0 0 0 -3%;}
+
+	.table-param tbody tr td {
+		padding: 2% 0 1.8% 0;
+	}
+
+	.cab-realty-odessa .cab-logo-realty { /*cabinet*/
+        background-color: #ffffff;
+        width: 150px;
+        height: 150px;}
+
+
+    .cabinet-my-client { /*cabinet main*/
+        margin-left: 0;}
+
+	.cabinet-menu {       /*cabinet menu*/
+		margin-right: 0;}
+
+	.cabinet-add-realty hr{
+		width: 100%;}
+	.realty-lease a {
+		font-size: 9px;}
+	.realty-edit .realty-raise-ad {
+		font-size: 12px;}
+	.realty-edit ul li {
+		padding-bottom: 4%;}
+
+	.cabinet-my-client hr { /*cabinet-my-client*/
+		width: 100%;}
+	.show-more {
+		margin: 9% 18% 3% 1%;
+	}
+
+    .cab-realty-odessa .cab-logo-realty {
+        background-color: #ffffff;
+        width: 150px;      /*cabinet my agancy*/
+        height: 150px;}
+
+    .cab-add-position ul li { /*cabinet add info agency*/
+        margin: 3% 0 3% 7%;}
+
+    .cab-add-text textarea {
+        margin: 10% 0 3% 8%;}
+
+    .cab-add-text button {
+        margin: 6% 0 10% 8%;}
+
+	.cab-coast-object .cab-coast-two {  /*cabinet coast*/
+		padding-left: 0;}
+    .cab-views {
+        margin: 2% 0 0 0;}
+
+    .footer-appstore img{
+        width: 120px;
+        height: 40px;}
+
+    .footer-email-field button {
+        padding: 0 10px 0 10px;
+    }
+
+
+
+}
+@media (max-width: 992px) and (min-width: 320px) {
+
+	.header-problem-realty{
+		padding-left: 0;
+		padding-right: 0;}
+
+	.header-problem-realty a img{
+		margin-left: -2%;}
+
+	.form-search .checkbox-custom,
+	.form-search .label {     /*index.html form*/
+		margin: 0;}
+
+	.btn-search {
+		margin: 10% 0 0 0;}
+
+	.form-search .select-div-last {
+		padding-right: 2%;}
+
+	.carousel-caption {      /*index.html realty block*/
+		margin-bottom: -11%;}
+
+	.carousel-caption button {
+		margin: 17px 2% 4% 0;}
+
+	.carousel-caption h5 {
+		margin: 5px 0 0 0;}
+
+	.show-more-offers p {
+		width: 73%;}
+
+	.form-group-realty .btn-search {   /*problem-realty form*/
+		margin: 9% 0 0 5%;
+	}
+	.search-result-block .advanced-search {  /*search-result form*/
+		margin: 0;
+	}
+
+	.search-result-block div { /*buy-house.html realty block*/
+		margin-top: 4%;}
+
+	.found-property {
+		font-size: 16px;}
+
+	.table-param tbody tr td {
+		padding: 2% 0 3% 0;}
+
+	.cabinet-main-logo {        /*cabinet menu*/
+		padding: 16% 7% 10% 17%;}
+	.cabinet-menu {
+		margin-left: 0;}
+
+
+	.cabinet-tab-client .btn-all-client {
+		font-size: 14px;}
+
+	.cab-icon-menu a {
+		font-size: 13px;}
+
+    .realty-lease {
+		margin-left: 0;}
+    .realty-lease a {
+        font-size: 8px;
+        padding: 5px 3px 5px 3px;
+    }
+    .realty-edit .realty-raise-ad {
+        padding: 5px 7px 5px 7px;
+    }
+    .cabinet-views p{
+        margin: 6px;
+    }
+	.my-client p {            /*cabinet my client*/
+		padding: 15px 15px 10px 15px;}
+	.info-about-client #notes-client {
+		margin: 0;}
+	.label-const{
+		float:right !important;
+		margin: 5px 11px 0 0;}
+	.add-param-form label {
+		padding: 24px 6px 0 0;}
+
+	.add-param-form label,
+	.info-about-client label {
+		padding-left: 20px;}
+
+	.main-param-client .constraints {
+		width: 100px;}
+
+	.info-about-client label:last-child {
+		padding-top: 10px;}
+	.show-more {
+		margin: 9% 0 3% 3%;
+		float:left;
+	}
+
+
+
+
+    .cabinet-region ul li { /*cabinet my agency*/
+        list-style: none;
+        margin-bottom: 2%;}
+    .cabinet-region .btn {
+        margin: 2% 0 2% 0;}
+	.cab-agency-spec {
+		margin-top: 0;
+	}
+
+	.cabinet-your-ad  label,  /*cabinet add realty*/
+	.cab-param-label {
+		float:left !important;}
+	.cabinet-price-condition form {
+		margin-left: -3%;}
+	.cabinet-price-condition .cab-param-window{
+		margin-left: 3%;}
+	.cabinet-your-ad label {
+		padding-top: 0;
+	}
+	.cab-realty-credit-label {
+		padding-left: 5%;
+	}
+	.photo-my-realty img{    /*cabinet my realty*/
+		height: 320px !important;
+	}
+	.cab-wallet-sidebar .btn {  /*cabinet my wallet*/
+		padding: 6px 0;}
+	.cab-sidebar-services h5 {
+		font-size: 10px;
+	}
+	.cab-profile-birthday input {  /*cabinet profile*/
+		width: 112px;}
+	.cab-profile-birthday {
+		margin-left: -2%;
+	}
+	.info-about-client label {  /*settings-password.html*/
+		float: left;
+	}
+	.settings-notice ul li p { /*settings-notise.html*/
+		text-align: left;
+	}
+
+}
+@media (max-width: 767px) and (min-width: 320px) {
+
+	.header-logo h5{           /*main menu*/
+		font-size: 14px;}
+
+	.header-problem-realty{
+		padding-left: 15px;
+		padding-right: 15px;}
+
+	.header-problem-realty a img{
+		margin-left:0;}
+
+	.header-add-realty img {
+		margin: 3% 3% 3% 0;}
+
+	.main-video h1 {         /*index.html video*/
+		font-size: 30px;}
+
+	.main-video p {
+		font-size: 18px;}   /*index.html form*/
+
+	.form-search .form-group {
+		padding: 2.6% 0 3% 2%;}
+
+	.select2-selection__arrow {
+		margin: 3%;}
+
+	.carousel-caption {
+		margin-bottom: -6%;}
+
+	.latest-ads .clock {   /*index.html realty block*/
+		display: none;}
+
+	.latest-ads h1{
+		margin-left: 1%;
+		font-size: 30px;}
+
+  	.table-responsive>.table>tbody>tr>td{
+		white-space: normal;}
+
+	.table-param thead tr th {
+		font-size: 10px;}
+
+	.content-text {
+		margin: 1% 2% 6% 2%;}
+
+	.content-advantages div:last-child {
+		padding-left: 0;}
+
+	.content-advantages button {
+		margin: 5% 0 0 10%;}
+
+	.show-more-offers {
+		margin: 3% 2% 5% 2%;
+	}
+
+	.search-result .form-search .form-group { /*buy-house.html realty block*/
+		padding: 2.6% 0 0 2%;}
+
+	.search-result-block .advanced-search {
+		margin: 0;}
+
+	.search-result-block .advanced-search {
+		 width: auto;}
+
+	.found-property {
+		font-size: 14px;}
+
+	.search-results-realty h2 {
+		font-size: 25px;}
+
+	.found-property-input {
+		width: 56%;}
+
+	.found-property-label {
+		font-family: Rubik-Regular, Helvetica sans-serif;
+		font-size: 12px;
+		margin-right: 3%;
+		margin-top: 1%;}
+
+	.search-results-realty .search-results-house {
+		margin: 2% 0 0 0;}
+
+    .content-advantages button {  /*CONTACT*/
+        margin: 2% 0 2% 10%;}
+    .content-advantages div:last-child {
+        padding: 0 0 3% 1%;
+    }
+
+	.cabinet-tab-client { /*cabinet menu*/
+		margin-left: 0;
+		width: 100%;}
+	.cabinet-main-logo {
+		padding: 16% 7% 185px 17%;
+	}
+
+	.cabinet-fill-purse {
+		width: 100%;
+		padding-right: 0;
+		margin-left: 0;
+		margin-top: 2%;}
+
+	.cabinet-my-realty {
+    padding-left: 0;}
+
+	.cab-icon-menu img {
+		margin-right: 5%;
+		float: none;}
+
+	.cabinet-main-menu{
+		padding-left: 0;}
+
+    .cabinet-main-logo img {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin: 25%;}
+
+	.cab-icon-menu li a p,
+	.cabinet-main-logo p {
+        display: none;}
+    .cabinet-my-all-clients img {
+        margin-right: 0;
+    }
+
+  .main-param-client{ /*cabinet my client*/
+	  padding: 0;}
+	.label-const{
+		margin: 5px 1px 0 0;
+	}
+	.add-param-form label {
+		float: left;
+	}
+
+
+
+	.cab-btn-search a {  /*cabinet-client-card*/
+		font-size: 14px;
+		margin: 1%;
+		padding: 5px;}
+	.cab-add-proposal .select2-selection__arrow {
+		margin: 4%;}
+	.cab-add-proposal p span {
+		font-size: 26px;
+	}
+
+	.cab-param-window label { /*cabinet add realty*/
+		padding: 0 0 2% 0;
+		float: left;
+	}
+	.photo-my-realty img{    /*cabinet my realty*/
+		height:280px !important;
+	}
+	.cab-add-text h5 {     /*cabinet profile*/
+		margin: 13px 0 0 40px;}
+	.cab-add-text textarea {
+		margin: 20px 0 3% 8%;}
+	.cab-agency-services h5 {
+		margin: 20px 0 25px 0;
+	}
+	.cab-reg-agency {
+		margin-top: 3%;
+	}
+	.settings-field .setting-email { /*settings.html*/
+		margin: 7% 1% 1% 0;
+	}
+
+
+}
+@media (max-width: 600px) and (min-width: 320px) {
+    .cabinet-main-logo img {                           /*cabinet menu*/
+        box-shadow: 0 0 0 5px #2b2f3f, 0 0 0 10px #3e4358;}
+    .cabinet-main-logo img {
+        margin: 20%;}
+
+
+}
+@media (max-width: 500px) and (min-width: 320px) {
+    .сontact-viber{   /*contact*/
+        margin: 8% 0 5% 0;
+    }
+	.problem-realty-filters { /*problem-realty*/
+		margin: 1% 0 0 2%;}
+	.problem-realty-header img {
+		margin: 0 0 -6% 0;}
+	.problem-realty-header h2 {
+		font-size: 25px;
+	}
+    .cabinet-main-menu {  /*cabinet menu*/
+        padding-right: 5px;
+    }
+    .cabinet-main-logo img {
+        width: 20px;
+        height: 20px;
+        margin: 20%;}
+
+	.info-about-client p {  /*cabinet my client*/
+		font-size: 14px;}
+	.info-about-client input {
+		width: 240px;}
+	.info-about-client p span {
+		font-size: 20px;}
+	.add-parametrs h2,
+	.main-param-client h2 {
+		font-size: 20px;}
+
+	.main-param-client .constraints {
+		width: 45%;
+	}
+
+    .cabinet-pagination .pagination-lg > li > a { /*cabinet-agency*/
+        padding: 12px;}
+
+    .cabinet-photo-realtor img { /*cabinet-blacklist-realtor*/
+        width: 60px;
+        height: 60px;
+        margin: 6% 9% 6% 2%;}
+
+	.cab-param-object .cab-pram-floor input { /*cabinet add realty*/
+		width: 35%;
+	}
+	.cabinet-your-ad ul li a {
+		margin-bottom: 1%;
+	}
+	.cabinet-your-ad .js-example-basic-single,
+	.cabinet-your-ad input {
+		height: 50px;
+		width: 240px;}
+	.cab-realty-credit input {
+		width: 110px;
+	}
+	.cab-realty-credit .js-example-basic-single,
+	.cab-realty-credit .select2-selection{
+		width: 110px;
+	}
+	.cabinet-photos-block button {
+		padding: 5px;
+		margin-left: 0;
+	}
+	.cab-description-realty button {
+		padding: 14px 5px 12px 5px;
+	}
+	.cab-description-realty h3{
+		font-size: 18px;
+	}
+	.cabinet-price-condition .cab-param-window {
+		margin-left: 0;
+	}
+	.cabinet-your-ad h3 {
+		font-size: 18px;
+	}
+	.cabinet-adress-map h3 {
+		font-size: 18px;
+		letter-spacing: 5px;
+	}
+	.cabinet-add-realty {
+		padding-left: 12px;
+	}
+	.cabinet-object-name {   /*cabinet object*/
+		font-size: 16px;
+	}
+	.cab-profile-birthday input { /*cabinet profile*/
+		margin-left: 8px;
+	}
+    .check-btn .label{
+        margin: -18% 0 0 17px;   /*cabinet reg-agency*/
+        white-space: normal;}
+    .cab-reg-agency button {
+        padding: 14px 15px 12px 15px;
+    }
+    .cabinet-support .info-about-client input {  /*cabinet support*/
+        height: 50px;
+        width: 250px;}
+    .cabinet-support .capch-block {
+        width: 220px;
+        height: 210px;
+    }
+	.settings-notice .checkbox-custom {  /*settings.html*/
+		margin: 10px 10px 20px 20px;}
+	.settings-field a {
+		margin: 6% 2% 2% 0;
+	}
+	.add-param-form input {  /*сabinet-my-client*/
+		width: 219px;}
+
+
+}
+@media (max-width: 400px) and (min-width: 320px) {
+    .form-search .select-div-last { /*index.html form*/
+        padding-right: 5%;
+    }
+    .footer-email-field button { /*index.html footer*/
+        font-size: 12px;
+    }
+    .search-result .form-search .checkbox-custom { /*buy-house.html form*/
+        margin-top: 22%;
+        margin-left: -3%;
+    }
+    .cabinet-pagination .pagination-lg > li > a {
+        padding: 8px;}
+    .list-inline > li {
+        padding-right: 0;}
+    .found-property {
+        font-size: 13px;}
+	.carousel-caption {
+		margin-bottom: -8%;}
+
+
+	.cabinet-menu {          /*cabinet small-menu*/
+		background-color: #2b2f3f;
+		width: 50px;}
+    .cab-icon-menu ul li {
+        list-style: none;
+        padding: 7px 15px 7px 12px;}
+	.cabinet-user-logo {
+		margin: 10px 10px 185px 5px;}
+	.cab-small-menu ul li {
+		list-style: none;
+		padding: 7px 15px 7px 7px;}
+
+    .cab-agency-btn .btn {   /*cabinet-agency*/
+        padding: 5px;
+    }
+    .cab-blacklist-realtor{
+        padding-right: 0;
+        padding-left: 0;
+    }
+	.cabinet-realtors h4 { /*cabinet-blacklist-realty*/
+		font-size: 15px;
+	}
+	.cabinet-realtors { /*cabinet-realtors*/
+		height: 40px;
+	}
+	.cab-clients .add-new-client {   /*cabinet-clients*/
+		padding: 14px 28px 12px 28px;}
+	.my-client p {
+		font-size: 17px;}
+
+	.cab-agency-spec{  /*cabinet-my-agency*/
+		padding: 2px;}
+	.cab-realty-odessa{
+		padding: 0;
+	}
+	.cab-realty-caption h4 { /*cabinet-my-realty*/
+		font-size: 18px;
+	}
+	.cabinet-my-wallet-form ul li a {  /*cabinet-my-wallet*/
+		padding: 7px 25px 7px 25px;}
+	.cab-wallet-sidebar {
+		margin-top: 15%;
+	}
+	.cabinet-object {    /*cabinet-object*/
+		padding: 0;}
+	.cab-object-location {
+		margin: 0;
+	}
+	.cab-profile-photo button {  /*cabinet-profile*/
+		padding: 10px 2px 10px 2px}
+	.cabinet-add-realty h3 {
+		font-size: 18px;}
+	.cab-add-position .label{
+		font-size: 10px;
+	}
+    .cab-realtors-btn {       /*cabinet-realtors*/
+        margin: 3% 3% 3% -4%;}
+    .cab-realtors-btn .btn {
+        font-size: 11px;}
+
+    .cabinet-support { /*cabinet-support*/
+        padding: 0;
+    }
+	.info-about-client input {
+		width: 230px;
+	}
+	.info-about-client input {   /*settings.html*/
+		margin: 0;}
+	.settings-field a {
+		padding: 6px 10px 6px 10px;
+		margin: 3% 2% 2% 0;}
+	.info-about-client label {
+		padding-left: 0;}
+	.info-about-client p {
+		margin: 14% 0 4% 0;}
+	.settings-remove .remove-btn {
+		padding: 9px 20px 9px 20px;}
+
+
+}
+
+
+
+
+
+
+
+
+
+

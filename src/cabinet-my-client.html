@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="#"/>
+    <meta name="description" content="#"/>
+    <title>Кабинет мои клиенты</title>
+
+    <!--[if lt IE 9]-->
+    <script src="js/html5shiv.min.js"></script>
+    <!--connecting favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Eric Meyer's CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!--connecting animations-->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Carousel -->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Select2-->
+    <link href="css/select2.css" rel="stylesheet">
+
+
+    <!--connecting CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--connecting animations-->
+    <!--<script src="js/wow.min.js"></script>-->
+    <!--<script>-->
+    <!--new WOW().init();-->
+    <!--</script>-->
+</head>
+<body>
+
+<div class="wrapper">
+
+    <header class="container-fluid">
+        <div class="header-reg">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="btn-group  header-registration pull-right">
+                        <button>
+                            <a href="#" type="button" class="btn">
+                                <img src="img/user-logo.png" width="20" height="20" alt="логотип">
+                                Rostislaw_777</a>
+                        </button>
+
+                        <button>
+                            <a href="#" type="button" class="btn">
+                                <hr noshade  class="pull-left">
+                                <img src="img/exit.png" width="21" height="21" alt="выход">
+                                Выйти</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row header-logo">
+            <div class="container">
+                <div class="col-lg-5 col-md-5 col-sm-4  col-xs-12 header-logo-name">
+                    <a href="index.html"><h1>WORLD OF <strong class="logo-grad">REALTY</strong></h1></a>
+                    <p>Проверенная недвижимость в Одессе</p>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-2 col-xs-12 header-problem-realty">
+                    <a href="cabinet-my-client.html"> <img src="img/header-problem.png" width="31" height="30" alt="проблемная недвижимость" style="float: left;"><h5 style="overflow:hidden;">МОЯ <br> НЕДВИЖИМОСТЬ</h5></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 header-exclusive-realty">
+                    <a href="cabinet-my-realty.html"><img src="img/header-exclusive.png" width="32" height="31" alt="эксклюзивная недвижимость" style="float: left;"><h5 style="overflow:hidden;">МОИ <br> КЛИЕНТЫ</h5></a>
+                </div>
+                <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 header-add-realty">-->
+                <!--<a href="#"><img src="img/header-plus.png" width="28" height="28" alt="плюс"><p style="overflow:hidden;">Добавить недвижимость</p></a>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="row header-menu">
+            <div class="container">
+                <div class="row header-menu-main">
+                    <a href="index.html"> ГЛАВНАЯ</a>
+                    <a href="cabinet.html" class="menu-my-cabinet">МОЙ КАБИНЕТ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid cabinet-content">
+            <div class="container">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 cabinet-menu">
+                    <div class="cabinet-user-logo">
+                        <img src="img/cabinet-ava.png" alt="аватар">
+                    </div>
+                    <div class="cab-small-menu">
+                        <ul>
+                            <li><a href="cabinet-object.html" class="btn"><img src="img/menu-house.png" alt="дом"></a></li>
+                            <li><a href="cabinet-add-realty.html" class="btn"><img src="img/menu-plus.png" alt="плюс"></a></li>
+                            <li><a href="cabinet-clients.html" class="btn"><img src="img/menu-user.png" alt="пользователь"></a></li>
+                            <li><a href="cabinet-my-wallet.html" class="btn"><img src="img/menu-purse.png" alt="кошелек"></a></li>
+                            <li><a href="cabinet-my-agency.html" class="btn"><img src="img/menu-case.png" alt="чемодан"></a></li>
+                            <li><a href="cabinet-support.html" class="btn"><img src="img/menu-headphones.png" alt="наушники"></a></li>
+                            <li><a href="cabinet-blacklist-realtors.html" class="btn"><img src="img/cabinet-icon-menu.png" alt="список"></a></li>
+                            <li><a href="cabinet-reg-agency.html" class="btn"><img src="img/menu-pen.png" alt="ручка"></a></li>
+                            <li><a href="cabinet-profile.html" class="btn"><img src="img/menu-files.png" alt="каталоги"></a></li>
+                            <li><a href="settings.html" class="btn"><img src="img/menu-star.png" alt="настройки"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-10 cabinet-my-client">
+                    <div class="col-lg-12 col-md-12 my-client">
+                        <p><img src="img/menu-user.png" alt="пользователь">МОИ КЛИЕНТЫ</p>
+                    </div>
+                    <div class="row col-lg-6  col-md-8 col-sm-8 col-xs-12 cab-my-client-input">
+                        <div class="info-about-client">
+                            <p>ИНФОРМАЦИЯ О КЛИЕНТЕ: <span>ЯНА</span></p>
+                            <form class="form-inline">
+                                <ul>
+                                    <li>
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label for="name-client">* ИМЯ КЛИЕНТА</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <input  id="name-client" type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label for="sername-client">ФАМИЛИЯ КЛИЕНТА</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <input  id="sername-client" type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                        <label for="contact-client">* КОНТАКТ КЛИЕНТА</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                        <input  id="contact-client" type="text">
+                                        </div>
+                                    </li>
+                                    <li class="cabinet-notes-client">
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label for="notes-client">ЗАМЕТКИ O КЛИЕНТЕ</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <p id="notes-client">Очень требовательный клиент.  Придирчивый к мелочам. Нужен очень хороший клиент.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <hr>
+                        <div class="info-about-client main-param-client">
+                            <h2>ОСНОВНЫЕ ПАРАМЕТРЫ</h2>
+                            <form class="">
+                                <ul>
+                                    <li>
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label for="name-deal">НАЗВАНИЕ</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <input  id="name-deal" type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label for="typet-deal">ТИП СДЕЛКИ</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <input  id="typet-deal" type="text">
+                                        </div>
+                                    </li>
+                                    <li class="row limit-trans">
+                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                            <label for="constraints">ОГРАНИЧЕНИЯ СДЕЛКИ</label>
+                                        </div>
+                                        <div class="col-md-3 col-sm-5 col-xs-8">
+                                            <input  class="constraints" id="constraints" type="text">
+                                            <label for="constraints" class="label-const"> до </label>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-8">
+                                            <input  class="constraints" id="per-month" type="text">
+                                            <label class="label-const"> за месяц </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                        <label>РАЙОН ПОИСКА</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                        <input type="text">
+                                        </div>
+                                    </li>
+                                    <li class="number-rooms">
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label>КОЛИЧЕСТВО КОМНАТ</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <input type="text" class="main-param-input">
+                                        </div>
+                                    </li>
+                                    <li class="main-param-floor">
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label>ЭТАЖ</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <input type="text" >
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label>СОСТОЯНИЕ ОБЬЕКТА</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <input type="text">
+                                        </div>
+                                    </li>
+                                    <li class="number-rooms">
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label>КОЛИЧЕСТВО КОМНАТ</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <input type="text" class="main-param-input">
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </form>
+                        </div>
+                        <hr>
+                        <div class="row add-parametrs">
+
+                            <h2>ДОПОЛНИТЕЛЬНЫЕ ПАРАМЕТРЫ</h2>
+                            <div class="row">
+                                <label class="show-more">
+                                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="label">Показать похожие объекты</span>
+                                </label>
+                            </div>
+
+
+                            <form class="form-inline">
+                                <ul>
+                                    <li class="row add-param-form">
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label>ПРОЖИВАНИЕ</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <input  type="text">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 demands">
+                                        <h5><strong>Требования к постояльцам</strong></h5>
+                                        <p>проживание с детьми</p>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 demands">
+                                        <ul>
+                                            <li><strong>Оборудование / мебель / удобства:  </strong></li>
+                                            <li>WI-FI</li>
+                                            <li>плазменный телевизор</li>
+                                            <li>кухонный уголок</li>
+                                            <li>душевая кабина</li>
+                                            <li>электрочайник</li>
+                                            <li>газовая плита</li>
+                                            <li>микроволновка</li>
+                                            <li>постель</li>
+                                            <li>посуда</li>
+                                            <li>кондиционер</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                        <button class="btn-search"><a href="#">Добавить поиск</a></button>
+
+                                <ul>
+                                    <li class="add-param-form">
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                        <label>ПРИОРИТЕТЫ КЛИЕНТА</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                        <input  type="text">
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 cab-btn-save">
+                                        <button type="submit">Cохранить изменения</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 cab-btn-delete">
+                                        <button><a href="#">Удалить клиента</a></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div><!--wrapper-->
+
+    <footer >
+        <div class="container-fluid footer-newsletter">
+            <div class="container">
+                <div class="col-lg-7 col-md-7 footer-subscribe">
+                    <img src="img/footer-letter.png" alt="письмо">
+                     <p style ="overflow:hidden;">Подпишитесь на рассылку, чтобы первым узнавать <br> о новых объектах</p>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <form class="form-inline footer-email-field">
+                        <input type="text"  placeholder="Ваш e-mail">
+                        <button type="submit">Подписаться</button>
+                        <p>Ваши данные останутся в безопасности</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footer-menu">
+                <div class="col-lg-7 col-md-7 footer-menu-field">
+                    <div class="row">
+                        <div class="col-lg-3 col-lg-offset-4 col-md-4 col-md-offset-2">
+                            <ul>
+                                <li><a href="#">Коммерческая недвижимость</a></li>
+                                <li><a href="#">Жилая недвижимость</a></li>
+                                <li><a href="#">Офис</a></li>
+                                <li><a href="#">Торговая площадь</a></li>
+                                <li><a href="#">Склад</a></li>
+                                <li><a href="#">Производство</a></li>
+                                <li><a href="#">Общепит</a></li>
+                                <li><a href="#">Готовый бизнес</a></li>
+                                <li><a href="#">Коммерческая земля</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <ul>
+                                <li><a href="#">Жилая недвижимость</a></li>
+                                <li><a href="#">Дом</a></li>
+                                <li><a href="#">Полдома</a></li>
+                                <li><a href="#">Таун-хаус</a></li>
+                                <li><a href="#">Комната</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <ul>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Специальное-размещение</a></li>
+                                <li><a href="#">Справочная информация</a></li>
+                                <li><a href="#">Проверенная недвижимость</a></li>
+                                <li><a href="#">О нас</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-lg-5 col-md-5 footer-menu-logo">
+                <div class="row">
+                    <div class="col-lg-7 col-md-10 footer-logo-name">
+                        <a href="#"><h1>WORLD OF <strong class="logo-grad">REALTY</strong></h1></a>
+                        <p>Проверенная недвижимость в Одессе</p>
+                        <div class="footer-tel">
+                            <h5>Все вопросы по телефону</h5>
+                            <p>+38 (093) 777-11-77</p>
+                            <button class="feedback"><a href="#">Обратный звонок</a></button>
+                        </div>
+                        <div class="social-icon">
+                            <ul class="list-inline">
+                                <li><a href="#"><img src="img/footer-facebook.png" alt="фейсбук"></a></li>
+                                <li><a href="#"><img src="img/footer-linkedin.png" alt="линкедин"></a></li>
+                                <li><a href="#"><img src="img/footer-twitter.png" alt="твиттер"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="social-icon footer-appstore">
+                            <ul class="list-inline">
+                                <li><a href="#"><img src="img/footer-appstore.png" width="150"  height="60" alt="фейсбук"></a></li>
+                                <li><a href="#"><img src="img/footer-googleplay.png" width="150"  height="60" alt="линкедин"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="row footer-name">
+               <div class="col-lg-9 col-lg-offset-2 col-md-9 col-md-offset-1">
+                <p><a href="#">World of Realty © 2017</a></p>
+               </div>
+           </div>
+        </div>
+
+
+    </footer>
+
+
+
+<!-- Bootstrap -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Select2 -->
+<script src="js/select2.min.js"></script>
+<script src="js/dropdown.js"></script>
+<!-- carousel -->
+<script src="js/slick.js"></script>
+<script src="js/carousel-slick.js"></script>
+
+</body>
+</html>

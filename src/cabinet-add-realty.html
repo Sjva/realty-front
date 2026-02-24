@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="#"/>
+    <meta name="description" content="#"/>
+    <title>Добавить недвижимость</title>
+
+    <!--[if lt IE 9]-->
+    <script src="js/html5shiv.min.js"></script>
+    <!--connecting favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Eric Meyer's CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!--connecting animations-->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Carousel -->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Select2-->
+    <link href="css/select2.css" rel="stylesheet">
+
+
+    <!--connecting CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--connecting animations-->
+    <!--<script src="js/wow.min.js"></script>-->
+    <!--<script>-->
+    <!--new WOW().init();-->
+    <!--</script>-->
+</head>
+<body>
+
+<div class="wrapper">
+
+    <header class="container-fluid">
+        <div class="header-reg">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="btn-group  header-registration pull-right">
+                        <button>
+                            <a href="#" type="button" class="btn">
+                                <img src="img/user-logo.png" width="20" height="20" alt="логотип">
+                                Rostislaw_777</a>
+                        </button>
+
+                        <button>
+                            <a href="#" type="button" class="btn">
+                                <hr noshade  class="pull-left">
+                                <img src="img/exit.png" width="21" height="21" alt="выход">
+                                Выйти</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row header-logo">
+            <div class="container">
+                <div class="col-lg-5 col-md-5 col-sm-4  col-xs-12 header-logo-name">
+                    <a href="index.html"><h1>WORLD OF <strong class="logo-grad">REALTY</strong></h1></a>
+                    <p>Проверенная недвижимость в Одессе</p>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-2 col-xs-12 header-problem-realty">
+                    <a href="cabinet-my-client.html"> <img src="img/header-problem.png" width="31" height="30" alt="проблемная недвижимость" style="float: left;"><h5 style="overflow:hidden;">МОЯ <br> НЕДВИЖИМОСТЬ</h5></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 header-exclusive-realty">
+                    <a href="cabinet-my-realty.html"><img src="img/header-exclusive.png" width="32" height="31" alt="эксклюзивная недвижимость" style="float: left;"><h5 style="overflow:hidden;">МОИ <br> КЛИЕНТЫ</h5></a>
+                </div>
+                <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 header-add-realty">-->
+                <!--<a href="#"><img src="img/header-plus.png" width="28" height="28" alt="плюс"><p style="overflow:hidden;">Добавить недвижимость</p></a>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="row header-menu">
+            <div class="container">
+                <div class="row header-menu-main">
+                    <a href="index.html"> ГЛАВНАЯ</a>
+                    <a href="cabinet.html" class="menu-my-cabinet">МОЙ КАБИНЕТ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid cabinet-content">
+            <div class="container">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 cabinet-menu">
+                    <div class="cabinet-user-logo">
+                        <img src="img/cabinet-ava.png" alt="аватар">
+                    </div>
+                    <div class="cab-small-menu">
+                        <ul>
+                            <li><a href="cabinet-object.html" class="btn"><img src="img/menu-house.png" alt="дом"></a></li>
+                            <li><a href="cabinet-add-realty.html" class="btn"><img src="img/menu-plus.png" alt="плюс"></a></li>
+                            <li><a href="cabinet-clients.html" class="btn"><img src="img/menu-user.png" alt="пользователь"></a></li>
+                            <li><a href="cabinet-my-wallet.html" class="btn"><img src="img/menu-purse.png" alt="кошелек"></a></li>
+                            <li><a href="cabinet-my-agency.html" class="btn"><img src="img/menu-case.png" alt="чемодан"></a></li>
+                            <li><a href="cabinet-support.html" class="btn"><img src="img/menu-headphones.png" alt="наушники"></a></li>
+                            <li><a href="cabinet-blacklist-realtors.html" class="btn"><img src="img/cabinet-icon-menu.png" alt="список"></a></li>
+                            <li><a href="cabinet-reg-agency.html" class="btn"><img src="img/menu-pen.png" alt="ручка"></a></li>
+                            <li><a href="cabinet-profile.html" class="btn"><img src="img/menu-files.png" alt="каталоги"></a></li>
+                            <li><a href="settings.html" class="btn"><img src="img/menu-star.png" alt="настройки"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-10 cabinet-add-realty">
+                    <div class="col-lg-12 col-md-12 my-client">
+                        <p><img src="img/menu-plus.png" alt="пользователь">ДОБАВИТЬ НЕДВИЖИМОСТЬ</p>
+                    </div>
+                    <div class="row cab-realty-text">
+                        <button class="text-close">&times;</button>
+                        <p>
+                            Чем подробнее вы заполните параметры, тем детальнее будет работать поиск,
+                            увеличиться возможность реализации вашего объекта. Чем точнее вы заполните
+                            данные объекта (точный адрес, квартира) тем вы будете видеть больше информации
+                            о данном объекте, к примеру вы сможете видеть сколько риэлторов занимаются
+                            данным объектом и кто подписывал эксклюзивный договор по данному объекту.
+                        </p>
+                    </div>
+                    <div class="row col-lg-7 col-md-8 col-sm-8 col-xs-12">
+                        <div class="cabinet-your-ad">
+                            <h2>ВАШЕ ОБЪЯВЛЕНИЕ</h2>
+
+                            <form class="form-inline">
+                                <ul>
+                                    <li class="row  cab-type-deal">
+                                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                            <label>* ТИП СДЕЛКИ</label>
+                                        </div>
+                                        <div class="row col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <a href="#" class="btn">АРЕНДА</a>
+                                            <a href="#" class="btn">ПРОДАЖА</a>
+                                        </div>
+                                    </li>
+                                    <li class="row  cab-type-lease">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                            <label>* ТИП АРЕНДЫ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <a href="#" class="btn">ДЛИТЕЛЬНО</a>
+                                            <a href="#" class="btn">ПОСУТОЧНО</a>
+                                            <a href="#" class="btn">ДО МЕСЯЦА</a>
+                                        </div>
+                                    </li>
+                                    <li class="row cab-type-transaction">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>* ОБЛАСТЬ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <select class="js-example-basic-single"  name="state" >
+                                            <option value="Bitcoin">Одесская</option>
+                                            <option value="Bitcoin">Николаевская</option>
+                                            <option value="Bitcoin">Херсонская</option>
+                                            <option value="Bitcoin">Черновецкая</option>
+                                        </select>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>* ГОРОД</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <select class="js-example-basic-single"  name="state" >
+                                            <option value="Bitcoin">Одесса</option>
+                                            <option value="Bitcoin">Белгород-Днестровский</option>
+                                            <option value="Bitcoin">Черноморск</option>
+                                            <option value="Bitcoin">Южный</option>
+                                        </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label for="contact-client">ТОЧНЫЙ АДРЕСС</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <input  id="contact-client" type="text">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <hr>
+                        <div class="row cabinet-adress-map">
+                            <h3>УКАЖИТЕ АДРЕСС НА КАРТЕ</h3>
+                            <div id="cabinet-map"></div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row  col-lg-7  col-md-8 col-sm-8 col-xs-12 cab-param-object">
+                        <div class="cabinet-your-ad">
+                            <h3>ПАРАМЕТРЫ ОБЪЕКТА</h3>
+
+                            <form class="form-inline">
+                                <ul>
+                                    <li class="row cab-param-window cab-param-number">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                            <label class="cab-param-label">КАДАСТРОВЫЙ НОМЕР</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <label>
+                                                <input class="radio" type="radio" name="radio-test">
+                                                <span class="radio-custom"></span>
+                                                <span class="label">Есть</span>
+                                            </label>
+                                            <label>
+                                                <input class="radio" type="radio" name="radio-test">
+                                                <span class="radio-custom"></span>
+                                                <span class="label">Нет</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="cab-param-window cab-param-type">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                            <label  class="cab-param-label">* ТИП</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <label>
+                                                <input class="radio" type="radio" name="radio-test">
+                                                <span class="radio-custom"></span>
+                                                <span class="label">Первичное жилье</span>
+                                            </label>
+                                            <label>
+                                                <input class="radio" type="radio" name="radio-test">
+                                                <span class="radio-custom"></span>
+                                                <span class="label">Вторичное жилье</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>* КОМНАТЫ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <select class="js-example-basic-single"  name="state" >
+                                            <option value="Bitcoin">1</option>
+                                            <option value="Bitcoin">2</option>
+                                            <option value="Bitcoin">3</option>
+                                            <option value="Bitcoin">4</option>
+                                        </select>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>* СТЕНЫ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <select class="js-example-basic-single"  name="state" >
+                                            <option value="Bitcoin">Кирпич</option>
+                                            <option value="Bitcoin">Газобетон</option>
+                                            <option value="Bitcoin">Панельные</option>
+                                            <option value="Bitcoin">Ракушняк</option>
+                                        </select>
+                                        </div>
+                                    </li>
+                                    <li class="cab-pram-floor">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>ЭТАЖ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <input type="text">
+                                        <span> ИЗ </span>
+                                        <input type="text">
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>* ГОД ПОСТРОЙКИ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <input type="text">
+                                        </div>
+                                    </li>
+                                    <li class="total-area">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>* ОБЩАЯ ПЛОЩАДЬ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <input type="text">
+                                        <span class="total-sign">М<sup><small>2</small></sup></span>
+                                        </div>
+                                    </li>
+                                    <li class="total-area">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>ПЛОЩАДЬ КОМНАТЫ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <select class="js-example-basic-single"  name="state" >
+                                            <option value="">10</option>
+                                            <option value="">20</option>
+                                            <option value="">30</option>
+                                            <option value="">40</option>
+                                        </select>
+                                        <span class="total-sign">М<sup><small>2</small></sup></span>
+                                        </div>
+                                    </li>
+                                    <li class="total-area">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>ЖИЛАЯ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <select class="js-example-basic-single"  name="state" >
+                                            <option value="">10</option>
+                                            <option value="">20</option>
+                                            <option value="">30</option>
+                                            <option value="">40</option>
+                                        </select>
+                                        <span class="total-sign">М<sup><small>2</small></sup></span>
+                                        </div>
+                                    </li>
+                                    <li class="total-area">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>КУХНЯ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <select class="js-example-basic-single"  name="state" >
+                                            <option value="">10</option>
+                                            <option value="">20</option>
+                                            <option value="">30</option>
+                                            <option value="">40</option>
+                                        </select>
+                                        <span class="total-sign">М<sup><small>2</small></sup></span>
+                                        </div>
+                                    </li>
+                                    <li class="cab-param-window">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label class="cab-param-label">ОКНО ВЫХОДЯТ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <label>
+                                            <input class="radio" type="radio" name="radio-test">
+                                            <span class="radio-custom"></span>
+                                            <span class="label">На улицу</span>
+                                        </label>
+                                        <label>
+                                            <input class="radio" type="radio" name="radio-test">
+                                            <span class="radio-custom"></span>
+                                            <span class="label">Во дворе</span>
+                                        </label>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>БАЛКОН</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <select class="js-example-basic-single"  name="state" >
+                                            <option value="">Есть</option>
+                                            <option value="">Нет</option>
+                                        </select>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>ЛОДЖИЯ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <select class="js-example-basic-single"  name="state" >
+                                            <option value="">Есть</option>
+                                            <option value="">Нет</option>
+                                        </select>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <label>РЕМОНТ</label>
+                                        </div>
+                                        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <select class="js-example-basic-single"  name="state" >
+                                            <option value="">Евро</option>
+                                            <option value="">Без ремонта</option>
+                                            <option value="">Старый ремонт</option>
+                                            <option value="">Без ремонта</option>
+                                        </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="row col-xs-12 cabinet-price-condition">
+                        <div class="cabinet-your-ad">
+                            <h3>ЦЕНА И УСЛОВИЕ</h3>
+                            <div class="row">
+                            <form class="form-inline">
+                                <ul>
+                                    <li class="row cab-realty-credit">
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 cab-realty-credit-label">
+                                            <label>* ЦЕНА</label>
+                                        </div>
+                                        <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="col-lg-6 col-md-6 col-sm-4 col-xs-6">
+                                                <input type="text">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
+                                                <select class="js-example-basic-single"  name="state" >
+                                                    <option value="гривна">&#8372;</option>
+                                                    <option value="доллар">$</option>
+                                                    <option value="евро">&euro;</option>
+                                                    <option value="рубль">&#8381;</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12  col-xs-12  cab-param-window">
+                                            <label>
+                                                <input class="radio" type="radio" name="radio-test">
+                                                <span class="radio-custom"></span>
+                                                <span class="label">Возможен кредит</span>
+                                            </label>
+                                            <label>
+                                                <input class="radio" type="radio" name="radio-test">
+                                                <span class="radio-custom"></span>
+                                                <span class="label">Возможен торг</span>
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                                            <label>ЦЕНА ЗА</label>
+                                        </div>
+                                        <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                                            <select class="js-example-basic-single" name="state" >
+                                                <option value="Bitcoin">1</option>
+                                                <option value="Bitcoin">2</option>
+                                                <option value="Bitcoin">3</option>
+                                                <option value="Bitcoin">4</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6  col-xs-12 ">
+                                            <p>Вы можете ввести стоимость объекта и она поделится на общую
+                                                площадь, что бы клиенты могли видеть интересующих их цену
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row  col-xs-12 cabinet-photos-block">
+                        <h3>ФОТОГРАФИЙ</h3>
+                        <p>Мы не допускаем к публикации фотографии с водяными знаками, чужих объектов и рекламные баннеры.</p>
+                        <p>Формат JPG, PNG или GIF. Максимальный размер файла 10 мб</p>
+                            <div class="row cab-download-photos">
+                                <ul class="list-inline">
+                                    <li>
+                                        <img src="img/room-1.png" alt="квартира">
+                                        <button class="close-photo">&#10006;</button>
+                                    </li>
+                                    <li>
+                                        <img src="img/room-2.png" alt="квартира">
+                                        <button class="close-photo">&#10006;</button>
+                                    </li>
+                                    <li>
+                                        <img src="img/room-3.png" alt="квартира">
+                                        <button class="close-photo">&#10006;</button>
+                                    </li>
+                                    <li class="cab-bg-photos"></li>
+                                    <li class="cab-bg-photos"></li>
+                                    <li class="cab-bg-photos"></li>
+                                    <li class="cab-bg-photos"></li>
+                                    <li class="cab-bg-photos"></li>
+                                </ul>
+                                <button class="btn">Выберите файл для загрузки</button>
+                            </div>
+                        <hr>
+                    </div>
+
+                    <div class="row  col-xs-12 cabinet-video-block cabinet-your-ad">
+                        <h3>ВИДЕО</h3>
+                        <p>Как правило, объявления с видео привлекают больше внимания.</p>
+                        <div class="row cab-link-video">
+                            <ul class="list-inline">
+                                <li>
+                                    <input type="text" placeholder="Вставте ссылку на ваше видео на YuoTube">
+                                </li>
+                                <li>
+                                    <button class="btn">Добавить видео</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="row col-xs-12 cabinet-photos-block">
+                        <h3>ЭКСКЛЮЗИВНОЕ ВИДЕО</h3>
+                        <p>Если вы обладаете эксклюзивным правом на предоставление услуг по конкретному объекту - получите дополнительные преимущества и размещение в списке
+                            эксклюзивное право. Просто загрузите договор на наш сайт, что бы ваш объект недвижимости получил статус Эксклюзивное право.
+                        </p>
+                        <p><strong>Важно!</strong> Данные договора конфиденциальны и не будут переданы третьим лицам. Информация нужна, что бы удостовериться в эксклюзивном
+                            праве риелтора на объект и предоставлении статуса эксклюзивное для ваше объекта недвижимости.
+                        </p>
+                        <div class="row cab-download-photos cab-download-file">
+                            <ul class="list-inline">
+                                <li class="uploaded-file">
+                                    <p>Имя файла...</p>
+                                    <button class="close-photo">&#10006;</button>
+                                </li>
+                                <li class="uploaded-file">
+                                    <p>Имя файла...</p>
+                                    <button class="close-photo">&#10006;</button>
+                                </li>
+                                <li class="uploaded-file">
+                                    <p>Имя файла...</p>
+                                    <button class="close-photo">&#10006;</button>
+                                </li>
+                                <li class="cab-bg-photos"></li>
+                                <li class="cab-bg-photos"></li>
+                                <li class="cab-bg-photos"></li>
+                                <li class="cab-bg-photos"></li>
+                                <li class="cab-bg-photos"></li>
+                            </ul>
+                            <button class="btn">Выберите файл для загрузки</button>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="row  col-xs-12 cab-description-realty">
+                        <h3>ПОДРОБНОЕ ОПИСАНИЕ ВАШЕЙ НЕДВИЖИМОСТИ</h3>
+                        <p>На какого клиента вы ориентируетесь? Для иностранных клиентов плюсом будет иметь описание на английском языкеб.</p>
+                        <div class="row cab-description-block">
+                            <div class="col-sm-5 col-xs-12  description-ru">
+                                <label for="comment-ru">ОПИСАНИЕ НА РУССКОМ</label>
+                                <textarea class="form-control" rows="11" id="comment-ru"></textarea>
+                            </div>
+                            <div class="col-sm-5 col-xs-12 description-ukr">
+                                <label for="comment-ukr">ОПИСАНИЕ НА УКРАИНСКОМ</label>
+                                <textarea class="form-control" rows="11" id="comment-ukr"></textarea>
+                            </div>
+                        </div>
+                        <div class="check-btn">
+                            <label><input type="checkbox" value="">Я ознакомлен и согласен с пользовательским соглашением</label>
+                        </div>
+
+                        <br>
+                        <button class="btn">Разместить недвижемость</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div><!--wrapper-->
+
+<footer >
+    <div class="container-fluid footer-newsletter">
+        <div class="container">
+            <div class="col-lg-7 col-md-7 footer-subscribe">
+                <img src="img/footer-letter.png" alt="письмо">
+                <p style ="overflow:hidden;">Подпишитесь на рассылку, чтобы первым узнавать <br> о новых объектах</p>
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <form class="form-inline footer-email-field">
+                    <input type="text"  placeholder="Ваш e-mail">
+                    <button type="submit">Подписаться</button>
+                    <p>Ваши данные останутся в безопасности</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-menu">
+        <div class="col-lg-7 col-md-7 footer-menu-field">
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-4 col-md-4 col-md-offset-2">
+                    <ul>
+                        <li><a href="#">Коммерческая недвижимость</a></li>
+                        <li><a href="#">Жилая недвижимость</a></li>
+                        <li><a href="#">Офис</a></li>
+                        <li><a href="#">Торговая площадь</a></li>
+                        <li><a href="#">Склад</a></li>
+                        <li><a href="#">Производство</a></li>
+                        <li><a href="#">Общепит</a></li>
+                        <li><a href="#">Готовый бизнес</a></li>
+                        <li><a href="#">Коммерческая земля</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <ul>
+                        <li><a href="#">Жилая недвижимость</a></li>
+                        <li><a href="#">Дом</a></li>
+                        <li><a href="#">Полдома</a></li>
+                        <li><a href="#">Таун-хаус</a></li>
+                        <li><a href="#">Комната</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Специальное-размещение</a></li>
+                        <li><a href="#">Справочная информация</a></li>
+                        <li><a href="#">Проверенная недвижимость</a></li>
+                        <li><a href="#">О нас</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-5 footer-menu-logo">
+            <div class="row">
+                <div class="col-lg-7 col-md-10 footer-logo-name">
+                    <a href="#"><h1>WORLD OF <strong class="logo-grad">REALTY</strong></h1></a>
+                    <p>Проверенная недвижимость в Одессе</p>
+                    <div class="footer-tel">
+                        <h5>Все вопросы по телефону</h5>
+                        <p>+38 (093) 777-11-77</p>
+                        <button class="feedback"><a href="#">Обратный звонок</a></button>
+                    </div>
+                    <div class="social-icon">
+                        <ul class="list-inline">
+                            <li><a href="#"><img src="img/footer-facebook.png" alt="фейсбук"></a></li>
+                            <li><a href="#"><img src="img/footer-linkedin.png" alt="линкедин"></a></li>
+                            <li><a href="#"><img src="img/footer-twitter.png" alt="твиттер"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="social-icon footer-appstore">
+                        <ul class="list-inline">
+                            <li><a href="#"><img src="img/footer-appstore.png" width="150"  height="60" alt="фейсбук"></a></li>
+                            <li><a href="#"><img src="img/footer-googleplay.png" width="150"  height="60" alt="линкедин"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-name">
+            <div class="col-lg-9 col-lg-offset-2 col-md-9 col-md-offset-1">
+                <p><a href="#">World of Realty © 2017</a></p>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+
+
+<!-- Bootstrap -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Select2 -->
+<script src="js/select2.min.js"></script>
+<script src="js/dropdown.js"></script>
+<!-- carousel -->
+<script src="js/slick.js"></script>
+<script src="js/carousel-slick.js"></script>
+<!-- googl map -->
+
+<script type="text/javascript" src="js/google-map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLpodSSW5E_TH2oasUl4DcmyKo2fZCwlg&callback=initMap" async defer></script>
+
+</body>
+</html>

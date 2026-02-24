@@ -1,0 +1,6 @@
+.idea
+.vscode
+.git
+template
+dist
+node_modules

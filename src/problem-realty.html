@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="#"/>
+    <meta name="description" content="#"/>
+    <title>Проблемная недвижимость</title>
+
+    <!--[if lt IE 9]-->
+    <script src="js/html5shiv.min.js"></script>
+    <!--connecting favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Eric Meyer's CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!--connecting animations-->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Select2-->
+    <link href="css/select2.css" rel="stylesheet">
+
+
+    <!--connecting CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--connecting animations-->
+    <!--<script src="js/wow.min.js"></script>-->
+    <!--<script>-->
+    <!--new WOW().init();-->
+    <!--</script>-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header class="container-fluid">
+        <div class="header-reg">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="btn-group  header-registration pull-right">
+                        <button>
+                            <a href="#" type="button" class="btn">
+                                <img src="img/user-logo.png" width="20" height="20" alt="логотип">
+                                Rostislaw_777</a>
+                        </button>
+
+                        <button>
+                            <a href="#" type="button" class="btn">
+                                <hr noshade  class="pull-left">
+                                <img src="img/exit.png" width="21" height="21" alt="выход">
+                                Выйти</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row header-logo">
+            <div class="container">
+                <div class="col-lg-5 col-md-5 col-sm-4  col-xs-12 header-logo-name">
+                    <a href="index.html"><h1>WORLD OF <strong class="logo-grad">REALTY</strong></h1></a>
+                    <p>Проверенная недвижимость в Одессе</p>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-2 col-xs-12 header-problem-realty">
+                    <a href="cabinet-my-client.html"> <img src="img/header-problem.png" width="31" height="30" alt="проблемная недвижимость" style="float: left;"><h5 style="overflow:hidden;">МОЯ <br> НЕДВИЖИМОСТЬ</h5></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 header-exclusive-realty">
+                    <a href="cabinet-my-realty.html"><img src="img/header-exclusive.png" width="32" height="31" alt="эксклюзивная недвижимость" style="float: left;"><h5 style="overflow:hidden;">МОИ <br> КЛИЕНТЫ</h5></a>
+                </div>
+                <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 header-add-realty">-->
+                <!--<a href="#"><img src="img/header-plus.png" width="28" height="28" alt="плюс"><p style="overflow:hidden;">Добавить недвижимость</p></a>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="row header-menu">
+            <div class="container">
+                <div class="row header-menu-main">
+                    <a href="index.html"> ГЛАВНАЯ</a>
+                    <a href="cabinet.html" class="menu-my-cabinet">МОЙ КАБИНЕТ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="container-fluid problem-realty">
+        <div class="problem-realty-header">
+            <div class="container">
+                <img src="img/house.png" alt="дом">
+                <h2>ПРОБЛЕМНАЯ НЕДВИЖИМОСТЬ</h2>
+                <p>В этом разделе собрана актуальная информация о проблемной недвижимости на основании информации предоставленной
+                    риелторами и агентствами недвижимости зарегистрированными на нашем сайте
+                </p>
+            </div>
+        </div>
+
+            <!--Форма для поиска недвижимости-->
+            <div class="form-search">
+
+                <form>
+                    <div class="form-shadow form-shadow-line"></div>
+                    <div class="row form-group  form-group-realty">
+                        <div class="container">
+                            <div class="col-lg-2 col-lg-offset-0 col-md-2 col-md-offset-0 col-sm-4 form-amount">
+                                <label for="form-what">ОБЛАСТЬ</label>
+                                <select class="js-example-basic-single form-control" id="form-what" name="state" style="width:100%;">
+                                    <option value="Аренда">Одесская</option>
+                                    <option value="Аренда">Одесская</option>
+                                    <option value="Аренда">Одесская</option>
+                                    <option value="Аренда">Одесская</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 select-div">
+                                <label for="form-buy">ГОРОД</label>
+                                <select class="js-example-basic-single form-control" id="form-buy" name="state" style="width:100%;">
+                                    <option value="Квартир">Аккерман</option>
+                                    <option value="Квартир">Аккерман</option>
+                                    <option value="Квартир">Аккерман</option>
+                                    <option value="Квартир">Аккерман</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2 col-md-2  col-sm-4 select-div">
+                                <label for="form-currency">ТИП НЕДВИЖИМОСТИ</label>
+
+                                <select class="js-example-basic-single form-control" id="form-currency" name="state" style="width:100%;">
+                                    <option value="1 комната">1 комната</option>
+                                    <option value="2 комнаты">2 комнаты</option>
+                                    <option value="3 комнаты">3 комнаты</option>
+                                    <option value="4 комнаты">4комнаты</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-4 select-div ">
+                                <label for="pay-method">РАЙОН</label><br>
+                                <select class="js-example-basic-single form-control" id="pay-method" name="state" style="width:100%;">
+                                    <option value="Киевский">Киевский</option>
+                                    <option value="Малиновский">Малиновский</option>
+                                    <option value="Приморский">Приморский</option>
+                                    <option value="Таирово">Таирово</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-md-1  col-sm-4 col-xs-6 select-div">
+                                <button class="btn-search">Найти</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        <div class="row main-content">
+            <div class="container">
+                <div class="problem-realty-filters">
+                    <ul class="list-inline">
+                        <li><p><img src="img/reset.png"  alt="сброс фильтра">Сбросить фильтры</p></li>
+                        <li class="realty-location">Одесская область <span>	&#10006;</span></li>
+                        <li class="realty-location">Одесса <span> &#10006;</span></li>
+                        <li class="realty-location">Квартира <span> &#10006;</span></li>
+                        <li class="realty-location">Киевский район <span> &#10006;</span></li>
+                        <li class="pull-right"><a href="#"><span class="glyphicon glyphicon-th"></span></a></li>
+                        <li class="pull-right"><a href="#"><span class="glyphicon glyphicon-th-list"></span></a></li>
+                    </ul>
+                </div>
+
+                <!--последние объявления-->
+                <div class="latest-ads">
+                    <div class="row ads-1">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 photos-room">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-1.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-2.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-3.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                    <span class="glyphicon  glyphicon-menu-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-menu-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9  table-param table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>АДРЕСС</th>
+                                    <th>НЕДВИЖИМОСТЬ</th>
+                                    <th>ПЛОЩАДЬ</th>
+                                    <th>ЭТАЖ</th>
+                                    <th>ДОПОЛНИТЕЛЬНО</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>г. Одесса р‑н. Приморский, Обсерваторный переулок</td>
+                                    <td class="wight-light">
+                                        <ul>
+                                            <li>2-комнатная</li>
+                                            <li>монолитный</li>
+                                            <li>новостройка</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>33 м²</li>
+                                            <li>кухня 6 м²</li>
+                                            <li>жилая 20 м²</li>
+                                        </ul>
+                                    </td>
+                                    <td class="wight-light">5 этаж</td>
+                                    <td>
+                                        <ul>
+                                            <li><strong>Лифт: </strong> 1П</li>
+                                            <li><strong>Балкон: </strong> 1Б</li>
+                                            <li><strong>Санузел: </strong> 1Р</li>
+                                            <li><strong>Окна: </strong> двор</li>
+                                            <li><strong>Телефон :</strong>да</li>
+                                            <li><strong>Лифт:</strong> 1П</li>
+                                            <li>Свободная</li>
+                                            <li>Вторичка</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row ads-1">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 photos-room">
+                            <div id="myCarouse2" class="carousel slide" data-ride="carousel">
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-1.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-2.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-3.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarouse2" data-slide="prev">
+                                    <span class="glyphicon  glyphicon-menu-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarouse2" data-slide="next">
+                                    <span class="glyphicon glyphicon-menu-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9  table-param table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>АДРЕСС</th>
+                                    <th>НЕДВИЖИМОСТЬ</th>
+                                    <th>ПЛОЩАДЬ</th>
+                                    <th>ЭТАЖ</th>
+                                    <th>ДОПОЛНИТЕЛЬНО</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>г. Одесса р‑н. Приморский, Обсерваторный переулок</td>
+                                    <td class="wight-light">
+                                        <ul>
+                                            <li>2-комнатная</li>
+                                            <li>монолитный</li>
+                                            <li>новостройка</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>33 м²</li>
+                                            <li>кухня 6 м²</li>
+                                            <li>жилая 20 м²</li>
+                                        </ul>
+                                    </td>
+                                    <td class="wight-light">5 этаж</td>
+                                    <td>
+                                        <ul>
+                                            <li><strong>Лифт: </strong> 1П</li>
+                                            <li><strong>Балкон: </strong> 1Б</li>
+                                            <li><strong>Санузел: </strong> 1Р</li>
+                                            <li><strong>Окна: </strong> двор</li>
+                                            <li><strong>Телефон :</strong>да</li>
+                                            <li><strong>Лифт:</strong> 1П</li>
+                                            <li>Свободная</li>
+                                            <li>Вторичка</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row ads-1">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 photos-room">
+                            <div id="myCarouse3" class="carousel slide" data-ride="carousel">
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-1.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-2.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-3.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarouse3" data-slide="prev">
+                                    <span class="glyphicon  glyphicon-menu-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarouse3" data-slide="next">
+                                    <span class="glyphicon glyphicon-menu-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9  table-param table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>АДРЕСС</th>
+                                    <th>НЕДВИЖИМОСТЬ</th>
+                                    <th>ПЛОЩАДЬ</th>
+                                    <th>ЭТАЖ</th>
+                                    <th>ДОПОЛНИТЕЛЬНО</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>г. Одесса р‑н. Приморский, Обсерваторный переулок</td>
+                                    <td class="wight-light">
+                                        <ul>
+                                            <li>2-комнатная</li>
+                                            <li>монолитный</li>
+                                            <li>новостройка</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>33 м²</li>
+                                            <li>кухня 6 м²</li>
+                                            <li>жилая 20 м²</li>
+                                        </ul>
+                                    </td>
+                                    <td class="wight-light">5 этаж</td>
+                                    <td>
+                                        <ul>
+                                            <li><strong>Лифт: </strong> 1П</li>
+                                            <li><strong>Балкон: </strong> 1Б</li>
+                                            <li><strong>Санузел: </strong> 1Р</li>
+                                            <li><strong>Окна: </strong> двор</li>
+                                            <li><strong>Телефон :</strong>да</li>
+                                            <li><strong>Лифт:</strong> 1П</li>
+                                            <li>Свободная</li>
+                                            <li>Вторичка</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row ads-1">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 photos-room">
+                            <div id="myCarouse4" class="carousel slide" data-ride="carousel">
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-1.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-2.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-3.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarouse4" data-slide="prev">
+                                    <span class="glyphicon  glyphicon-menu-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarouse4" data-slide="next">
+                                    <span class="glyphicon glyphicon-menu-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9  table-param table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>АДРЕСС</th>
+                                    <th>НЕДВИЖИМОСТЬ</th>
+                                    <th>ПЛОЩАДЬ</th>
+                                    <th>ЭТАЖ</th>
+                                    <th>ДОПОЛНИТЕЛЬНО</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>г. Одесса р‑н. Приморский, Обсерваторный переулок</td>
+                                    <td class="wight-light">
+                                        <ul>
+                                            <li>2-комнатная</li>
+                                            <li>монолитный</li>
+                                            <li>новостройка</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>33 м²</li>
+                                            <li>кухня 6 м²</li>
+                                            <li>жилая 20 м²</li>
+                                        </ul>
+                                    </td>
+                                    <td class="wight-light">5 этаж</td>
+                                    <td>
+                                        <ul>
+                                            <li><strong>Лифт: </strong> 1П</li>
+                                            <li><strong>Балкон: </strong> 1Б</li>
+                                            <li><strong>Санузел: </strong> 1Р</li>
+                                            <li><strong>Окна: </strong> двор</li>
+                                            <li><strong>Телефон :</strong>да</li>
+                                            <li><strong>Лифт:</strong> 1П</li>
+                                            <li>Свободная</li>
+                                            <li>Вторичка</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row ads-1">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 photos-room">
+                            <div id="myCarouse5" class="carousel slide" data-ride="carousel">
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-1.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-2.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-time">
+                                            <p><img src="img/carousel-order.png" width="10" height="16" alt="орден">ПРОВЕРЕННАЯ НЕДВИЖИМОСТЬ</p>
+                                            <p><img src="img/carousel-clock.png" width="12" height="14" alt="время">Cегодна в <span>15:00</span></p>
+                                        </div>
+                                        <img src="img/room-3.png" class="carousel-img" alt="недвижимость" style="width:100%; height: 225px">
+                                        <div class="carousel-caption">
+                                            <h5>Шикарная квартира с понорамнвым видом на море</h5>
+                                            <p>416 546 54 &#8372</p>
+                                            <button><a href="#">Подробнее</a></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarouse5" data-slide="prev">
+                                    <span class="glyphicon  glyphicon-menu-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarouse5" data-slide="next">
+                                    <span class="glyphicon glyphicon-menu-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9  table-param table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>АДРЕСС</th>
+                                    <th>НЕДВИЖИМОСТЬ</th>
+                                    <th>ПЛОЩАДЬ</th>
+                                    <th>ЭТАЖ</th>
+                                    <th>ДОПОЛНИТЕЛЬНО</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>г. Одесса р‑н. Приморский, Обсерваторный переулок</td>
+                                    <td class="wight-light">
+                                        <ul>
+                                            <li>2-комнатная</li>
+                                            <li>монолитный</li>
+                                            <li>новостройка</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>33 м²</li>
+                                            <li>кухня 6 м²</li>
+                                            <li>жилая 20 м²</li>
+                                        </ul>
+                                    </td>
+                                    <td class="wight-light">5 этаж</td>
+                                    <td>
+                                        <ul>
+                                            <li><strong>Лифт: </strong> 1П</li>
+                                            <li><strong>Балкон: </strong> 1Б</li>
+                                            <li><strong>Санузел: </strong> 1Р</li>
+                                            <li><strong>Окна: </strong> двор</li>
+                                            <li><strong>Телефон :</strong>да</li>
+                                            <li><strong>Лифт:</strong> 1П</li>
+                                            <li>Свободная</li>
+                                            <li>Вторичка</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row show-more-offers">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-5 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                        <a href="#"><img src="img/see-more.png" width="45" height="45" alt="кнопка play" style="float: left;"><p style="overflow:hidden;"> Показать больше вариантов</p></a>
+                    </div>
+                </div>
+                <div class="row cabinet-pagination">
+                    <ul class="pagination pagination-lg">
+                        <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="pagination-ellipsis"><a href="#"> ... </a></li>
+                        <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div><!--wrapper-->
+
+
+
+
+<footer >
+    <div class="container-fluid footer-newsletter">
+        <div class="container">
+            <div class="col-lg-7 col-md-7 footer-subscribe">
+                <img src="img/footer-letter.png" alt="письмо">
+                <p style ="overflow:hidden;">Подпишитесь на рассылку, чтобы первым узнавать <br> о новых объектах</p>
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <form class="form-inline footer-email-field">
+                    <input type="text"  placeholder="Ваш e-mail">
+                    <button type="submit">Подписаться</button>
+                    <p>Ваши данные останутся в безопасности</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-menu">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 footer-menu-field">
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-4 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-0 col-xs-11 col-xs-offset-1">
+                    <ul>
+                        <li><a href="#">Коммерческая недвижимость</a></li>
+                        <li><a href="#">Жилая недвижимость</a></li>
+                        <li><a href="#">Офис</a></li>
+                        <li><a href="#">Торговая площадь</a></li>
+                        <li><a href="#">Склад</a></li>
+                        <li><a href="#">Производство</a></li>
+                        <li><a href="#">Общепит</a></li>
+                        <li><a href="#">Готовый бизнес</a></li>
+                        <li><a href="#">Коммерческая земля</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-sm-offset-0 col-xs-11 col-xs-offset-1">
+                    <ul>
+                        <li><a href="#">Жилая недвижимость</a></li>
+                        <li><a href="#">Дом</a></li>
+                        <li><a href="#">Полдома</a></li>
+                        <li><a href="#">Таун-хаус</a></li>
+                        <li><a href="#">Комната</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-sm-offset-0 col-xs-11 col-xs-offset-1">
+                    <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Специальное-размещение</a></li>
+                        <li><a href="#">Справочная информация</a></li>
+                        <li><a href="#">Проверенная недвижимость</a></li>
+                        <li><a href="#">О нас</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 footer-menu-logo">
+            <div class="row">
+                <div class="col-lg-7 col-md-10 col-sm-12 col-xs-12 footer-logo-name">
+                    <a href="#"><h1>WORLD OF <strong class="logo-grad">REALTY</strong></h1></a>
+                    <p>Проверенная недвижимость в Одессе</p>
+                    <div class="footer-tel">
+                        <h5>Все вопросы по телефону</h5>
+                        <p>+38 (093) 777-11-77</p>
+                        <button class="feedback"><a href="#">Обратный звонок</a></button>
+                    </div>
+                    <div class="social-icon">
+                        <ul class="list-inline">
+                            <li><a href="#"><img src="img/footer-facebook.png" alt="фейсбук"></a></li>
+                            <li><a href="#"><img src="img/footer-linkedin.png" alt="линкедин"></a></li>
+                            <li><a href="#"><img src="img/footer-twitter.png" alt="твиттер"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="social-icon footer-appstore">
+                        <ul class="list-inline">
+                            <li><a href="#"><img src="img/footer-appstore.png" width="150"  height="60" alt="фейсбук"></a></li>
+                            <li><a href="#"><img src="img/footer-googleplay.png" width="150"  height="60" alt="линкедин"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-name">
+            <div class="col-lg-9 col-lg-offset-2 col-md-9 col-md-offset-1 col-xs-9 col-xs-offset-1 col-xs-9 col-xs-offset-1">
+                <p><a href="#">World of Realty © 2018</a></p>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+
+
+<!-- Bootstrap -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Select2 -->
+<script src="js/select2.min.js"></script>
+<script src="js/dropdown.js"></script>
+
+
+</body>
+</html>
